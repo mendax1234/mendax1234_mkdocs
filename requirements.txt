@@ -1,2 +1,2 @@
 mkdocs-material
-mkdocs-blog-plugins
+mkdocs-blog-plugin
