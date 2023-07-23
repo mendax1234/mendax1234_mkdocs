@@ -1,0 +1,10 @@
+# Glossary
+
+## Professional Terms
+
+<table data-full-width="true"><thead><tr><th>English</th><th>Chinese</th></tr></thead><tbody><tr><td>complex instruction set computer (CISC)</td><td></td></tr><tr><td>reduced-instruction set computer (RISC)</td><td></td></tr><tr><td>peripheral    <strong>/pəˈrɪfərəl/</strong></td><td><p><strong>外围设备；外部设备</strong></p><p>a piece of equipment that is connected to a computer</p></td></tr><tr><td></td><td></td></tr><tr><td></td><td></td></tr></tbody></table>
+
+## Daily terms&#x20;
+
+<table><thead><tr><th width="169.5">English</th><th>Chinese meaning + English meaning</th></tr></thead><tbody><tr><td>letup</td><td><p><strong>中止，平息，减弱；</strong></p><p>when something unpleasant stops or becomes less difficult, severe etc</p></td></tr><tr><td>precede</td><td><p><strong>先于……发生；</strong></p><p>to happen or exist before something or someone, or to come before something else in a series    </p></td></tr><tr><td>typo</td><td><p><strong>打字（或排印）文稿的小错误；</strong></p><p>a small mistake in a typed or printed text</p></td></tr><tr><td>errata </td><td><strong>勘误表</strong></td></tr><tr><td><p>pedagogy </p><p><strong>/ˈpedəɡɒdʒi/</strong></p></td><td><p><strong>教育学；教学法；</strong></p><p>the study of teaching methods</p></td></tr><tr><td>intent</td><td><p><strong>意图；意向；目的</strong>   </p><p>(to do something) what you intend to do</p></td></tr><tr><td>orchestrate</td><td><p><strong>精心安排；策划；密谋</strong></p><p>to organize a complicated plan or event very carefully or secretly</p></td></tr><tr><td>absurd</td><td><p><strong>荒谬的；荒唐的；怪诞不经的</strong></p><p>extremely silly; not logical and sensible</p></td></tr><tr><td>aforementioned</td><td><p><strong>前面提到的；上述的</strong></p><p>mentioned before, in an earlier sentence</p></td></tr><tr><td><p>synopsis </p><p><strong>/sɪˈnɒpsɪs/</strong></p></td><td><p><strong>大纲，提要，概要，梗概</strong></p><p>a summary of a piece of writing, a play, etc.</p></td></tr><tr><td></td><td></td></tr><tr><td></td><td></td></tr><tr><td></td><td></td></tr></tbody></table>
+
