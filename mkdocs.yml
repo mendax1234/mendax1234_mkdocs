@@ -44,6 +44,9 @@ theme:
       toggle:
         icon: material/brightness-4
         name: Switch to light mode
+  favicon: assets/favicon.png
+  icon:
+    logo: logo
 
 extra:
   alternate:
