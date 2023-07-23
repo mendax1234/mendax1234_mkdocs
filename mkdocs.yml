@@ -48,6 +48,8 @@ nav:
   - index.md
   - Blog:
     - blog/index.md 
+    - 2022:
+      - blog/posts/chinese-search-support.md
 
 markdown_extensions:
   - pymdownx.highlight:
