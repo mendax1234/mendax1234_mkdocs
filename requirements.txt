@@ -1,3 +1,4 @@
 mkdocs-material==9.2.0b1
 pillow
 cairosvg
+jieba
