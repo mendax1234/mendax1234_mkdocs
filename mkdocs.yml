@@ -39,10 +39,11 @@ extra:
       lang: zh
   social:
     - icon: fontawesome/brands/github-alt
-      link: https://github.com/mendax1234
+      link: https://github.com/mendax1234/
 
 plugins:
   - blog
+  - search
 
 nav:
   - index.md
