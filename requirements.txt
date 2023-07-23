@@ -1,0 +1,3 @@
+mkdocs-material
+blog
+pillow cairosvg
