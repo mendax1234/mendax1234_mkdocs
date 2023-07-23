@@ -1,5 +1,9 @@
 # Project Information
 site_name: Daniel Wenbo's Site
+site_url: https://mendax1234.github.io/
+site_author: Daniel Wenbo
+site_description: >-
+  Daniel Wenbo's personal site.
 
 # Repository
 repo_name: mendax1234/MySite
@@ -41,10 +45,10 @@ theme:
 extra:
   alternate:
     - name: en -English
-      link: /docs/en
+      link: docs/en/
       lang: en
     - name: zh -Chinese
-      link: /docs/zh
+      link: docs/zh/
       lang: zh
   social:
     - icon: fontawesome/brands/github-alt
