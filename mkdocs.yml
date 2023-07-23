@@ -2,7 +2,7 @@
 site_name: Daniel Wenbo's Site
 
 # Repository
-repo_name: mendax1234/mendax1234.github.io
+repo_name: mendax1234/MySite
 repo_url: https://github.com/mendax1234/mendax1234.github.io
 
 # Copyright
@@ -49,6 +49,8 @@ extra:
   social:
     - icon: fontawesome/brands/github-alt
       link: https://github.com/mendax1234/
+    - icon: fontawesome/brands/twitter
+      link: https://twitter.com/Daniel_Wenbo
 
 plugins:
   - blog
@@ -58,8 +60,8 @@ nav:
   - index.md
   - Blog:
     - blog/index.md 
-    - 2022:
-      - blog/posts/chinese-search-support.md
+    - 2023:
+      - blog/posts/hello-world.md
 
 markdown_extensions:
   - pymdownx.highlight:
