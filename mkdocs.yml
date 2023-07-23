@@ -16,7 +16,9 @@ theme:
   name: material
   features:
     - navigation.tabs
+    - navigation.tabs.sticky
     - navigation.sections
+    - navigation.instant
     - toc.integrate
     - navigation.top
     - search.suggest
@@ -24,6 +26,7 @@ theme:
     - content.tabs.link
     - content.code.annotation
     - content.code.copy
+    - toc.follow
 
   language: en
 
@@ -86,6 +89,9 @@ nav:
       - blog/posts/hello-world.md
 
 markdown_extensions:
+  - footnotes
+  - toc:
+      permalink: true
   - pymdownx.highlight:
       anchor_linenums: true
   - pymdownx.inlinehilite
