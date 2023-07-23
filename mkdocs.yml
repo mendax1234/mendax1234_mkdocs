@@ -51,10 +51,10 @@ theme:
 extra:
   alternate:
     - name: en -English
-      link: docs/en/
+      link: /en/
       lang: en
     - name: zh -Chinese
-      link: docs/zh/
+      link: /zh/
       lang: zh
   social:
     - icon: fontawesome/brands/github-alt
