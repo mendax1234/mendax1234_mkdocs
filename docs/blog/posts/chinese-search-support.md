@@ -8,9 +8,6 @@ description: >
 categories:
   - Search
 links:
-  - blog/posts/search-better-faster-smaller.md
-  - setup/setting-up-site-search.md#chinese-language-support
-  - insiders/index.md#how-to-become-a-sponsor
 ---
 
 # Chinese search support – 中文搜索​支持
