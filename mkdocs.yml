@@ -11,31 +11,48 @@ theme:
     - content.tabs.link
     - content.code.annotation
     - content.code.copy
+
+  language: en
+
   palette:
     # Palette toggle for automatic mode
     - media: "(prefers-color-scheme)"
+      scheme: default
       toggle:
         icon: material/brightness-auto
-        name: Switch to light mode
-
-    # Palette toggle for light mode
-    - media: "(prefers-color-scheme: light)"
-      scheme: default 
-      toggle:
-        icon: material/brightness-7
         name: Switch to dark mode
 
+    # Palette toggle for light mode
+    - media: "(prefers-color-scheme: light)" 
+      toggle:
+        icon: material/brightness-7
+        name: Switch to system preference
+        
     # Palette toggle for dark mode
     - media: "(prefers-color-scheme: dark)"
       scheme: slate
       toggle:
         icon: material/brightness-4
-        name: Switch to system preference
+        name: Switch to light mode
 
 extra:
+  alternate:
+    - name: en -English
+      link: /docs/en
+      lang: en
+    - name: zh -Chinese
+      link: /docs/zh
+      lang: zh
   social:
     - icon: fontawesome/brands/github-alt
       link: https://github.com/mendax1234/SurviveNTUManual
+
+#plugins:
+#  - blog
+
+nav:
+  - Blog:
+    - blog/index.md 
 
 markdown_extensions:
   - pymdownx.highlight:
