@@ -19,7 +19,7 @@ theme:
     - navigation.tabs.sticky
     - navigation.sections
     - navigation.instant
-    - toc.integrate
+    # - toc.integrate
     - navigation.top
     - search.suggest
     - search.highlight
@@ -27,7 +27,6 @@ theme:
     - content.code.annotation
     - content.code.copy
     - toc.follow
-    # - toc.integrate 
 
   language: en
 
@@ -83,7 +82,7 @@ plugins:
   - search
 
 nav:
-  - index.md
+  - Home: index.md
   - Blog:
     - blog/index.md 
     - 2023:
