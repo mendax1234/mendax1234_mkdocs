@@ -1,4 +1,13 @@
+# Project Information
 site_name: Daniel Wenbo's Site
+
+# Repository
+repo_name: mendax1234/mendax1234.github.io
+repo_url: https://github.com/mendax1234/mendax1234.github.io
+
+# Copyright
+copyright: Copyright &copy; 2023 Daniel Wenbo
+
 theme:
   name: material
   features:
@@ -68,6 +77,3 @@ markdown_extensions:
   - pymdownx.emoji:
       emoji_index: !!python/name:materialx.emoji.twemoji
       emoji_generator: !!python/name:materialx.emoji.to_svg
-
-copyright: |
-  &copy; 2023 <a href="https://github.com/mendax1234/mendax1234.github.io"  target="_blank" rel="noopener">Daniel Wenbo</a>
