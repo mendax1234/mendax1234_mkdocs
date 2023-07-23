@@ -42,7 +42,7 @@ extra:
       link: https://github.com/mendax1234
 
 plugins:
-  - blog:
+  - blog
 
 nav:
   - index.md
