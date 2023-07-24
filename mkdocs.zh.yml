@@ -19,7 +19,6 @@ theme:
     - navigation.tabs.sticky
     - navigation.sections
     - navigation.instant
-    - navigation.path
     # - toc.integrate
     - navigation.top
     - search.suggest
@@ -29,7 +28,7 @@ theme:
     - content.code.copy
     - toc.follow
 
-  language: en
+  language: zh
 
   palette:
     # Palette toggle for light mode
@@ -84,14 +83,14 @@ extra:
 plugins:
   - blog
   - search:
-      lang: en
+      lang: zh
 
 nav:
-  - Home: index.md
+  - Home: zh/index.md
   - Blog:
-    - blog/index.md 
+    - zh/blog/index.md 
     - 2023:
-      - blog/posts/hello-world.md
+      - zh/blog/posts/hello-world.md
 
 markdown_extensions:
   - footnotes
