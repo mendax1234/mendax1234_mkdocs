@@ -51,10 +51,10 @@ theme:
 extra:
   alternate:
     - name: en -English
-      link: https://mendax1234.github.io/en/
+      link: /
       lang: en
     - name: zh -Chinese
-      link: https://mendax1234.github.io/zh/
+      link: /zh/
       lang: zh
   social:
     - icon: fontawesome/brands/github-alt
@@ -82,7 +82,8 @@ extra:
 
 plugins:
   - blog
-  - search
+  - search:
+      lang: en
 
 nav:
   - Home: index.md
