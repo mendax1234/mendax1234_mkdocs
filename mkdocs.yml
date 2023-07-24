@@ -78,6 +78,7 @@ plugins:
   - blog
   - search
 #  - i18n:
+#      search_reconfigure: false
 #      default_language: en
 #      languages:
 #        en:
