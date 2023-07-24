@@ -31,5 +31,10 @@ jobs:
         with:
           entrypoint: mkdocs
           args: build --config-file=mkdocs.zh.yml  
+      - name: Deploy docs to gh-pages branch
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./site
       - run: pip install -r requirements.txt
-      - run: mkdocs gh-deploy --force
+      # - run: mkdocs gh-deploy --force
