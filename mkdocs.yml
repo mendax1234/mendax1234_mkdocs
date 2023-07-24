@@ -18,9 +18,8 @@ theme:
     - navigation.tabs
     - navigation.tabs.sticky
     - navigation.sections
-    - navigation.instant
+    #- navigation.instant
     - navigation.path
-    # - toc.integrate
     - navigation.top
     - search.suggest
     - search.highlight
@@ -28,6 +27,7 @@ theme:
     - content.code.annotation
     - content.code.copy
     - toc.follow
+    # - toc.integrate
 
   language: en
 
@@ -50,13 +50,6 @@ theme:
     logo: logo
 
 extra:
-  alternate:
-    - name: en -English
-      link: /
-      lang: en
-    - name: zh -Chinese
-      link: /zh/
-      lang: zh
   social:
     - icon: fontawesome/brands/github-alt
       link: https://github.com/mendax1234/
@@ -83,9 +76,15 @@ extra:
 
 plugins:
   - blog
-  - search:
-      lang: en
-
+  - search
+#  - i18n:
+#      default_language: en
+#      languages:
+#        en:
+#          name: English
+#        zh:
+#          name: Chinese
+          
 nav:
   - Home: index.md
   - Blog:
