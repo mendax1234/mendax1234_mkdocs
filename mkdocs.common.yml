@@ -51,10 +51,10 @@ theme:
 extra:
   alternate:
     - name: en -English
-      link: /en/
+      link: https://mendax1234.github.io/en/
       lang: en
     - name: zh -Chinese
-      link: /zh/
+      link: https://mendax1234.github.io/zh/
       lang: zh
   social:
     - icon: fontawesome/brands/github-alt

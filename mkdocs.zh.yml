@@ -1,0 +1,114 @@
+# Project Information
+site_name: Daniel Wenbo's Site
+site_url: https://mendax1234.github.io/
+docs_dir: 'docs/zh'
+site_author: Daniel Wenbo
+site_description: >-
+  Daniel Wenbo's personal site.
+
+# Repository
+repo_name: mendax1234/MySite
+repo_url: https://github.com/mendax1234/mendax1234.github.io
+
+# Copyright
+copyright: Copyright &copy; 2023 Daniel Wenbo
+
+theme:
+  name: material
+  features:
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.sections
+    - navigation.instant
+    # - toc.integrate
+    - navigation.top
+    - search.suggest
+    - search.highlight
+    - content.tabs.link
+    - content.code.annotation
+    - content.code.copy
+    - toc.follow
+
+  language: zh
+
+  palette:
+    # Palette toggle for light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default 
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+
+    # Palette toggle for dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+  favicon: assets/favicon.png
+  icon:
+    logo: logo
+
+extra:
+  alternate:
+    - name: en -English
+      link: https://mendax1234.github.io/en/
+      lang: en
+    - name: zh -Chinese
+      link: https://mendax1234.github.io/zh/
+      lang: zh
+  social:
+    - icon: fontawesome/brands/github-alt
+      link: https://github.com/mendax1234/
+    - icon: fontawesome/brands/twitter
+      link: https://twitter.com/Daniel_Wenbo
+  analytics: 
+    analytics:
+    provider: google
+    property: !ENV GOOGLE_ANALYTICS_KEY
+    feedback:
+      title: Was this page helpful?
+      ratings:
+        - icon: material/emoticon-happy-outline
+          name: This page was helpful
+          data: 1
+          note: >-
+            Thanks for your feedback!
+        - icon: material/emoticon-sad-outline
+          name: This page could be improved
+          data: 0
+          note: >- 
+            Thanks for your feedback! Help us improve this page by
+            using our <a href="..." target="_blank" rel="noopener">feedback form</a>.
+
+plugins:
+  - blog
+  - search:
+      lang: en
+
+nav:
+  - Home: index.md
+  - Blog:
+    - blog/index.md 
+    - 2023:
+      - blog/posts/hello-world.md
+
+markdown_extensions:
+  - footnotes
+  - toc:
+      permalink: true
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - admonition
+  - pymdownx.arithmatex:
+      generic: true
+  - footnotes
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.mark
+  - attr_list
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
