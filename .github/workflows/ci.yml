@@ -10,6 +10,8 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
+      env:
+        GOOGLE_ANALYTICS_KEY: ${{ secrets.GOOGLE_ANALYTICS_KEY }}
       - uses: actions/checkout@v3
       - uses: actions/setup-python@v4
         with:
@@ -21,7 +23,5 @@ jobs:
       - uses: actions/setup-python@v2
         with:
           python-version: 3.x
-      - env:
-        GOOGLE_ANALYTICS_KEY: ${{ secrets.GOOGLE_ANALYTICS_KEY }}
       - run: pip install -r requirements.txt
       - run: mkdocs gh-deploy --force
