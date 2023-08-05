@@ -21,8 +21,11 @@
 |🖥| **Operating System** | Windows 11 Pro & macOS(Hackintosh)                             |
 
 **You are probably also looking for...**
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=mendax1234&hide=java,html,tex&title_color=ffffff&text_color=c9cacc&icon_color=2bbc8a&bg_color=1d1f21&langs_count=3" align="right">
 
 - To view FRC Team 6940's robot code, go to FRC Team 6940's [Official Github Page](https://github.com/Team6940)
 - In my spare time, I use [Hackintosh](https://en.wikipedia.org/wiki/Hackintosh), and here is [my EFI for ThinkPad X390](https://github.com/mendax1234/ThinkpadX390-Opencore-EFI). My primary working machine is also a ThinkPad X390. However, I use Windows 11 Pro as my primary operating system.
 - I also maintain the EFI for the [ThinkPad E40](https://github.com/mendax1234/ThinkPadE40-Clover-EFI), but I no longer use this laptop because it is too old!
+
+<center><img src="https://github-readme-stats.vercel.app/api?username=mendax1234&show_icons=true&line_height=27&count_private=true&title_color=ffffff&text_color=c9cacc&icon_color=2bbc8a&bg_color=1d1f21"></center>
+
+<center><img src="https://github-readme-stats.vercel.app/api/top-langs/?username=mendax1234&hide=java,html,tex&title_color=ffffff&text_color=c9cacc&icon_color=2bbc8a&bg_color=1d1f21&langs_count=3"></center>
