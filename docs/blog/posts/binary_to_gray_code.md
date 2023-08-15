@@ -23,3 +23,8 @@ In short, the advantage of Gray code is that juts one bit changes for each step.
 ## How to convert Binary to Gray Code?
 > Thanks this [link](https://zhuanlan.zhihu.com/p/451408535) for helping me to gain a deeper understanding of Gray code.
 
+### Things you need to know before starting
+1. The [**XOR operation**](https://www.baeldung.com/java-xor-operator)
+
+
+### 
