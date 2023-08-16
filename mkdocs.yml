@@ -90,10 +90,6 @@ nav:
   - Home: index.md
   - Blog:
     - blog/index.md 
-    - 2023:
-      - blog/posts/hello-world.md
-      # - blog/posts/ntu-preschool.md
-      - blog/posts/binary-to-gray-code.md
 
 markdown_extensions:
   - footnotes
