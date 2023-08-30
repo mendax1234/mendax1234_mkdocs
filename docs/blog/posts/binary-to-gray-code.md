@@ -7,6 +7,7 @@ description: >
 categories:
   - NTU SCSE Resources
 links:
+comments: true
 ---
 
 # The conversion between Binary and Gray Code
