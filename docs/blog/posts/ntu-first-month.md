@@ -6,6 +6,7 @@ description: >
   Feelings about my first month in NTU.
 categories:
   - NTU Life
+comments: true
 links:
 ---
 
