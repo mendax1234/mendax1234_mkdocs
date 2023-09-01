@@ -56,6 +56,11 @@ extra:
       link: https://github.com/mendax1234/
     - icon: fontawesome/brands/twitter
       link: https://twitter.com/Daniel_Wenbo
+    - icon: fontawesome/brands/instagram
+      link: https://www.instagram.com/daniel_wenbo/
+    - icon: fontawesome/brands/linkedin
+      link: https://www.linkedin.com/in/wenbo-zhu-69bba6218/
+    
   analytics: 
     analytics:
     provider: google
