@@ -22,6 +22,7 @@ theme:
     #- navigation.instant
     - navigation.path
     - navigation.top
+    - navigation.footer
     - search.suggest
     - search.highlight
     - content.tabs.link
@@ -52,12 +53,16 @@ theme:
 
 extra:
   social:
-    - icon: fontawesome/brands/github-alt
+    - icon: fontawesome/brands/github
       link: https://github.com/mendax1234/
     - icon: fontawesome/brands/twitter
       link: https://twitter.com/Daniel_Wenbo
     - icon: fontawesome/brands/instagram
       link: https://www.instagram.com/daniel_wenbo/
+    - icon: fontawesome/brands/facebook
+      link: https://www.facebook.com/profile.php?id=100081281025388
+    - icon: fontawesome/brands/discord
+      link: https://discordapp.com/users/1134380192769511468
     - icon: fontawesome/brands/linkedin
       link: https://www.linkedin.com/in/wenbo-zhu-69bba6218/
     
