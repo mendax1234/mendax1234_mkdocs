@@ -7,4 +7,4 @@
 </p>
 
 
-Hey, welcome to Daniel Wenbo's personal website!
+Hey, welcome to Daniel Wenbo's personal site!
