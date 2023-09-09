@@ -39,6 +39,7 @@ Hey, are you still confused about some interesting functions in Python. Don't wo
 ### String
 
 1. How to check whether there is a Upper letter, lower letter, or digit in a string.
+
 Python has provided us with some very useful functions, they are `string.isUpper()`, `string.isLower()`, `string.isDigit()`. These functions can help us quickly check whether there is a Upper or lower letter or a digit in the string.
 
 Below is the Demo:
@@ -70,6 +71,7 @@ Below is the Demo:
     ```
 
 2. How to check if there is a special letter in the string?
+
 !!! note
     This is a tricky question since the definition of **special letter** here is not clearly defined. Maybe it means the special letters on your keyboard, or it may be some other special letters which are not on your keyboard. That's really tricky. But I will still provide two methods to try to solve this question.
 
@@ -92,6 +94,7 @@ b. Try using the ASCII table. Firstly, you should convert the letter to ASCII an
 Keys and values are two very important concepts in Dictionary. In Python, Dictionaries are used to store data value in key:value pairs. Each key in the Dictionary may have zero or one or multiple values.
 
 1. How to assign multiple values to one key?
+
 Let's say that in Python, we usually use `lists` or `tuples` to store a bunch of values. Similarly, we still can use these two data structures to store different values of a key element in the Dictionary. However, one thing you should notice is that `tuple` is immutable while `list` is mutable.
 
 Below is the demo:
@@ -106,6 +109,7 @@ Below is the demo:
     myDict = {"userName":("Jack","Tom","James","Andy")} # You can't add something or delete something to "userName" since tuple is immutable
     ```
 2. How to add values to one key in Dictionary?
+
 Firstly, you need to make sure that you have used the `list` method. Secondly, all you need to do is just using the methods owned by `list` in Python. For example, if you want to add value, you need to use `myList.append()`.
 
 === "Python"
@@ -118,6 +122,7 @@ Firstly, you need to make sure that you have used the `list` method. Secondly, a
     If you want to use `.append()` to add values to your key, make sure to initialize your key's value with a `list`. Otherwise, the program will crash because only `list` in Python has the `append()` method.
 
 3. Get the `keys` and `values` in the dictionary
+
 Python is very powerful, if you want to get the `keys` and `values` of a dictionary, you only need to use `myDict.keys()` to get the `keys` and `myDict.values()` to get the `values`.
 
 === "Python"
@@ -143,7 +148,9 @@ Don't worry. Python's `in` keyword can do this perfectly. i.e. You want to check
     `in` is an important keyword in Python. It mainly has two functions. One is to check if a value is present in a sequence (list, range, string etc). The other is to iterate through a sequence in a `for` loop.
 
 4. Add new `{keys:values}` pair to Dictionary.
+
 Python Dictionary has provided a very useful method called `myDict.update()` to let you add new `{keys:values}` pair to your dictionary quickly and conveniently.
+
 Below is the demo:
 
 === "Python"
