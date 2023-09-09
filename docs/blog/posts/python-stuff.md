@@ -15,6 +15,13 @@ Hey, are you still confused about some interesting functions in Python. Don't wo
 
 <!-- more -->
 
+**Task list for this post:**
+
+- [ ] Add Introduction part
+- [ ] Add tuple part
+- [ ] Add list part
+    * [ ]  Add slice part 
+
 ## Introduction
 
 > Add something here after finishing the writing of the whole post.
