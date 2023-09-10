@@ -21,6 +21,7 @@ Hey, are you still confused about some interesting functions in Python. Don't wo
 - [ ] Add tuple part
 - [ ] Add list part
     * [ ]  Add slice part 
+- [ ] The difference between Method and Function
 
 ## Introduction
 
