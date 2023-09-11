@@ -25,6 +25,7 @@ Hey, are you still confused about some interesting functions in Python. Don't wo
 - [ ] Add List Functions part
 - [ ] Add List Methods part
 - [ ] Add String Functions part
+- [ ] Add String Methods part
 
 ## Introduction
 
