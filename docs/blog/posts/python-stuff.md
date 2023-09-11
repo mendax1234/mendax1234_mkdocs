@@ -22,6 +22,8 @@ Hey, are you still confused about some interesting functions in Python. Don't wo
 - [ ] Add list part
     * [ ]  Add slice part 
 - [ ] The difference between Method and Function
+- [ ] Add List Functions part
+- [ ] Add String Functions part
 
 ## Introduction
 
