@@ -23,6 +23,7 @@ Hey, are you still confused about some interesting functions in Python. Don't wo
     * [ ]  Add slice part 
 - [ ] The difference between Method and Function
 - [ ] Add List Functions part
+- [ ] Add List Methods part
 - [ ] Add String Functions part
 
 ## Introduction
