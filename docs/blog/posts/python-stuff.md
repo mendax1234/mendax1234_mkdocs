@@ -41,15 +41,15 @@ Hey, are you still confused about some interesting functions and methods in Pyth
 !!! warning "Important"
     Since I may not have enough time to do all the introduction work of some basic concepts in Python, I will only cover the functions related to a specific topic. If you need some help on basic concepts in Python, try google or something equivalent first, I believe that there are some very useful resources on the Internet. If you are still at a loss, you can also comment at the bottom of this blog. I will help you as soon as possible. Thanks.
 
-### Boolean Operands
+## Boolean Operands
 
 1. In Python, you can use either `&` or `and` to implement the **and** operation. Similarly, you can use either `or` or `|` to represent the **or** operation.
 
-### String
+## String
 
-#### String Methods
+### String Methods
 
-##### Upper and Lower Letters
+#### Upper and Lower Letters
 
 In Python, we will use `myString.upper()` and `myString.lower()` to convert the string to upper or lower letters.
 
@@ -61,7 +61,7 @@ In Python, we will use `myString.upper()` and `myString.lower()` to convert the 
     myString.lower() # "hello world"
     ```
 
-##### Check Upper, Lower and Digit Letters
+#### Check Upper, Lower and Digit Letters
 
 Python has provided us with some very useful functions, they are `string.isUpper()`, `string.isLower()`, `string.isDigit()`. These functions can help us quickly check whether there is a Upper or lower letter or a digit in the string.
 
@@ -93,7 +93,7 @@ Below is the Demo:
 	print("There is at least one Digit in this string")
     ```
 
-##### Check Special Letters
+#### Check Special Letters
 
 !!! note
     This is a tricky question since the definition of **special letter** here is not clearly defined. Maybe it means the special letters on your keyboard, or it may be some other special letters which are not on your keyboard. That's really tricky. But I will still provide two methods to try to solve this question.
@@ -102,7 +102,7 @@ Below is the Demo:
 
 2. Try using the ASCII table. Firstly, you should convert the letter to ASCII and then see if it is in the correct range of special letters in the ASCII table.
 
-##### Find the first occurrence of the specified value
+#### Find the first occurrence of the specified value
 
 In Python, we use `myString.find()` method to find the first occurrence of the specified value. If the value is not found, the `find()` method returns `-1`, otherwise it returns the index of the first occurrence of the specified value.
 
@@ -113,7 +113,7 @@ In Python, we use `myString.find()` method to find the first occurrence of the s
     myString.find("world") # 6
     myString.find("worlds") # -1
     ```
-#####
+#### `.join()` function
 In Python, we will `myString.join(target)` method to make a new string by joining all the elements in an iterable (list, tuple, string etc.) separated by `myString`. 
 
 === "Python"
@@ -126,9 +126,9 @@ In Python, we will `myString.join(target)` method to make a new string by joinin
 !!! note
     In Python, we can chain **methods** together. i.e. `myString.upper().join("123")` will return `"1HELLO WORLD2HELLO WORLD3"` if `myString = "hello world"`.
 
-#### String Functions
+### String Functions
 
-##### Calculate the length of a string
+#### Calculate the length of a string
 In Python, we use `len()` function to calculate the length of a string.
 
 === "Python"
@@ -138,9 +138,9 @@ In Python, we use `len()` function to calculate the length of a string.
     len(myString) # 11
     ```
 
-#### Other String Stuff
+### Other String Stuff
 
-##### Concatenate strings
+#### Concatenate strings
 
 In Python, we use `+` operator to concatenate strings.
 
@@ -151,7 +151,7 @@ In Python, we use `+` operator to concatenate strings.
     myString = myString + "123" # "hello world123"
     ```
 
-##### Repeat Strings
+#### Repeat Strings
 
 In Python, we use `*` operator to repeat strings.
 
@@ -162,7 +162,7 @@ In Python, we use `*` operator to repeat strings.
     myString = myString * 3 # "hello worldhello worldhello world"
     ```
 
-##### Membership Operations
+#### Membership Operations
 In Python, we use `in` keyword to check if a string is present in another string. i.e. `if "hello" in myString:`
 
 === "Python"
@@ -171,7 +171,7 @@ In Python, we use `in` keyword to check if a string is present in another string
     myString = "hello world"
     print(hello in myString) # True
     ```
-##### String Slicing
+#### String Slicing
 In Python, we use `myString[start:end:step]` to slice a string.
 
 === "Python"
@@ -181,7 +181,7 @@ In Python, we use `myString[start:end:step]` to slice a string.
     print(myString[0:5:2]) # "hlo"
     ```
 
-###### Extended Slicing
+##### Extended Slicing
 
 Copy a String using `myString[:]` or `''.join(myString)`
 
@@ -206,12 +206,12 @@ The index of a String
 
 <p align="center"> <img src="/blog/Python-stuff/String-index.png" title = "String Index"> </p>
 
-##### Getting the code
+#### Getting the code
 There are two common systems for representing characters: ASCII and Unicode. In Python, we use `ord()` function to get the code of a character. i.e. `ord("a")` will return `97`. And vice versa, we use `chr()` function to get the character of a code. i.e. `chr(97)` will return `"a"`.
 
 > Insert an ASCII table here
 
-##### Escape Characters
+#### Escape Characters
 In Python, we use `\` to escape characters.
 
 === "Python"
@@ -221,7 +221,7 @@ In Python, we use `\` to escape characters.
     print(myString) # "hello "world""
     ```
 
-### Dictionary, List and Tuple
+## Dictionary, List and Tuple
 
 First, before we talk about Dictionary, List and Tuple, we may need to know what is a **Composite Type**. A Composite Type is a *data type* which is constructed using *primitive* and *other composite types*. Also, it can be regarded as a new data type made from existing ones.
 
@@ -232,7 +232,7 @@ And now, you may find the **Dictionary**, **List** and **Tuple** are all data st
 !!! warning "Important"
     In this section, `myDict`, `myList` and `myTuple` will be the default name of these three types of data structures I will use in Python.
 
-#### List
+### List
 Let's start from **List** because it is the most fundamental one.
 
 **Definition**
@@ -252,16 +252,16 @@ In Python, we can either use `[]` or `list()` to create a list.
     myList = list("hello world 123")
     ```
 
-##### List Functions
+#### List Methods
 
-##### List Methods
+#### List Functions
 
-#### Dictionary
+### Dictionary
 
 !!! note
     In this section, `myDict` will be the name of the dictionary that I will use in Python.
 
-##### Keys and Values
+#### Keys and Values
 Keys and values are two very important concepts in Dictionary. In Python, Dictionaries are used to store data value in key:value pairs. Each key in the Dictionary may have zero or one or multiple values.
 
 **How to assign multiple values to one key?**
