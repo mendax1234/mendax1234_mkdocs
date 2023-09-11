@@ -181,7 +181,7 @@ In Python, we use `myString[start:end:step]` to slice a string.
     print(myString[0:5:2]) # "hlo"
     ```
 
-**Extended Slicing**
+###### Extended Slicing
 
 Copy a String using `myString[:]` or `''.join(myString)`
 
@@ -223,8 +223,38 @@ In Python, we use `\` to escape characters.
 
 ### Dictionary, List and Tuple
 
+First, before we talk about Dictionary, List and Tuple, we may need to know what is a **Composite Type**. A Composite Type is a *data type* which is constructed using *primitive* and *other composite types*. Also, it can be regarded as a new data type made from existing ones.
+
+Then, we may need to know about **data structures**. **Data structure** are particular ways of storing data to make some operations easier or more efficient. Different data structures have different characteristics.
+
+And now, you may find the **Dictionary**, **List** and **Tuple** are all data structures in Python. They are also three **Composite Types**. So, let's talk about them one by one.
+
 !!! warning "Important"
     In this section, `myDict`, `myList` and `myTuple` will be the default name of these three types of data structures I will use in Python.
+
+#### List
+Let's start from **List** because it is the most fundamental one.
+
+**Definition**
+Python list is an ordered sequence of items.
+
+!!! note
+    **String** is also an ordered sequence of items. But the difference between **String** and **List** is that **String** is immutable while **List** is mutable.
+
+**How to create a list?**
+
+In Python, we can either use `[]` or `list()` to create a list.
+
+=== "Python"
+
+    ``` py
+    myList = ["hello", "world", "123"]
+    myList = list("hello world 123")
+    ```
+
+##### List Functions
+
+##### List Methods
 
 #### Dictionary
 
