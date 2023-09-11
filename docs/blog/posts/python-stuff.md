@@ -26,6 +26,7 @@ Hey, are you still confused about some interesting functions in Python. Don't wo
 - [ ] Add List Methods part
 - [ ] Add String Functions part
 - [ ] Add String Methods part
+- [ ] Argument and Parameter
 
 ## Introduction
 
@@ -167,5 +168,3 @@ Below is the demo:
 
 !!! note
     Every time you call the `update()` method, it won't erase your original `{keys:values}` in the dictionary. Instead, it will add a new one at the end of the dictionary.
-
-
