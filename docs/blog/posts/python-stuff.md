@@ -308,6 +308,7 @@ Python is very powerful, if you want to get the `keys` and `values` of a diction
     Please note that the `myDict.keys()` will return a value with `dict_keys`. Similarly, `myDict.values()` will return a value with `dict_values`. These two results can be treated as `lists`.
 
 a. How to judge whether a string has appeared in your dictionary's `values`?
+
 Don't worry. Python's `in` keyword can do this perfectly. i.e. You want to check whether "Tom" is your `values` in the dictionary. 
 
 === "Python"
