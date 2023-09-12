@@ -204,7 +204,7 @@ Reverse a String using `myString[::-1]`
 
 The index of a String
 
-<p align="center"> <img src="/blog/Python-stuff/String-index.png" title = "String Index"> </p>
+<p align="center"> <img src="/blog/python-stuff/String-index.png" title = "String Index"> </p>
 
 #### Getting the code
 There are two common systems for representing characters: ASCII and Unicode. In Python, we use `ord()` function to get the code of a character. i.e. `ord("a")` will return `97`. And vice versa, we use `chr()` function to get the character of a code. i.e. `chr(97)` will return `"a"`.
