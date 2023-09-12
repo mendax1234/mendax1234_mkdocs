@@ -236,6 +236,7 @@ And now, you may find the **Dictionary**, **List** and **Tuple** are all data st
 Let's start from **List** because it is the most fundamental one.
 
 **Definition**
+
 Python list is an ordered sequence of items.
 
 !!! note
