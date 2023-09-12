@@ -209,7 +209,7 @@ The index of a String
 #### Getting the code
 There are two common systems for representing characters: ASCII and Unicode. In Python, we use `ord()` function to get the code of a character. i.e. `ord("a")` will return `97`. And vice versa, we use `chr()` function to get the character of a code. i.e. `chr(97)` will return `"a"`.
 
-> Insert an ASCII table here
+<p align="center"> <img src="/blog/python-stuff/ASCII.jpg" title = "ASCII Table"> </p>
 
 #### Escape Characters
 In Python, we use `\` to escape characters.
