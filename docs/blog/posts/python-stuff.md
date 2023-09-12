@@ -86,11 +86,11 @@ Below is the Demo:
 
     # Check if there is a upper letter, lower letter or digit in this string
     if Upper:
-	print("There is at least one Upper letter in this string")
+	    print("There is at least one Upper letter in this string")
     if Lower:
-	print("There is at least one Lower letter in this string")
+	    print("There is at least one Lower letter in this string")
     if Digit:
-	print("There is at least one Digit in this string")
+	    print("There is at least one Digit in this string")
     ```
 
 #### Check Special Letters
