@@ -1,9 +1,9 @@
 ---
 date: 2023-09-11
 authors: [Daniel Wenbo]
-title: Adders in Digital Logic
+title: Combinational Circuits in Digital Logic
 description: >
-  This post will discuss the adders in digital logic.
+  This post will discuss the combinational Circuits in Digital Logic and other things related.
 categories:
   - NTU SCSE Resources
 links:
