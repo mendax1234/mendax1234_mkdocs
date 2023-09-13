@@ -295,6 +295,7 @@ In Python, we can either use `[]` or `list()` to create a list.
 | Index Backward | -4 | -3  | -2   | -1   |
 
 `myList[1]` &rarr; `'a'`
+
 `myList[:3]` &rarr; `[1, 'a', 3.14]` 
 
 #### List Methods
