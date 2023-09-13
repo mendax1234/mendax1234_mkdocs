@@ -49,7 +49,7 @@ Hey, are you still confused about some interesting functions and methods in Pyth
 
 ### String Methods
 
-#### Upper and Lower Letters
+#### `.upper()` `.lower()` 
 
 In Python, we will use `myString.upper()` and `myString.lower()` to convert the string to upper or lower letters.
 
@@ -61,7 +61,7 @@ In Python, we will use `myString.upper()` and `myString.lower()` to convert the 
     myString.lower() # "hello world"
     ```
 
-#### Check Upper, Lower and Digit Letters
+#### `.isUpper()` `isLower()` `isDigit()`
 
 Python has provided us with some very useful functions, they are `string.isUpper()`, `string.isLower()`, `string.isDigit()`. These functions can help us quickly check whether there is a Upper or lower letter or a digit in the string.
 
@@ -93,7 +93,7 @@ Below is the Demo:
 	    print("There is at least one Digit in this string")
     ```
 
-#### Check Special Letters
+**Check Special Letters**
 
 !!! note
     This is a tricky question since the definition of **special letter** here is not clearly defined. Maybe it means the special letters on your keyboard, or it may be some other special letters which are not on your keyboard. That's really tricky. But I will still provide two methods to try to solve this question.
@@ -102,7 +102,7 @@ Below is the Demo:
 
 2. Try using the ASCII table. Firstly, you should convert the letter to ASCII and then see if it is in the correct range of special letters in the ASCII table.
 
-#### Find the first occurrence of the specified value
+#### `.find()`
 
 In Python, we use `myString.find()` method to find the first occurrence of the specified value. If the value is not found, the `find()` method returns `-1`, otherwise it returns the index of the first occurrence of the specified value.
 
@@ -113,7 +113,7 @@ In Python, we use `myString.find()` method to find the first occurrence of the s
     myString.find("world") # 6
     myString.find("worlds") # -1
     ```
-#### `.join()` method
+#### `.join()`
 In Python, we will `myString.join(target)` method to make a new string by joining all the elements in an iterable (list, tuple, string etc.) separated by `myString`. 
 
 === "Python"
@@ -126,7 +126,7 @@ In Python, we will `myString.join(target)` method to make a new string by joinin
 !!! note
     In Python, we can chain **methods** together. i.e. `myString.upper().join("123")` will return `"1HELLO WORLD2HELLO WORLD3"` if `myString = "hello world"`.
 
-#### `.split()` method
+#### `.split()`
 
 - The string method `spilt()` generates a sequence of characters by splitting the string at certain split-characters.
 
@@ -144,7 +144,7 @@ In Python, we will `myString.join(target)` method to make a new string by joinin
 
 ### String Functions
 
-#### Calculate the length of a string
+#### `len()`
 In Python, we use `len()` function to calculate the length of a string.
 
 === "Python"
