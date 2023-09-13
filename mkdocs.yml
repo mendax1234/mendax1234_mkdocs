@@ -88,6 +88,8 @@ extra:
 plugins:
   - blog
   - search
+  - git-revision-date-localized:
+      enable_creation_date: true
 #  - i18n:
 #      search_reconfigure: false
 #      default_language: en
