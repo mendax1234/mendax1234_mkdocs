@@ -1,7 +1,7 @@
 ---
 date: 2023-09-09
 authors: [Daniel Wenbo]
-title: Tricky Python stuff
+title: Tricky Python
 description: >
   This post includes some "tricky" but interesting stuff in python
 categories:
