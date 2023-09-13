@@ -10,7 +10,7 @@ comments: true
 links:
 ---
 
-# Tricky Python stuff
+# Tricky Python
 Hey, are you still confused about some interesting functions and methods in Python. Don't worry, after reading this post, maybe you will gain a quick command of these interesting but "tricky" functions and methods in Python. 
 
 <!-- more -->
