@@ -167,6 +167,20 @@ In Python, we use `+` operator to concatenate strings.
     myString = myString + "123" # "hello world123"
     ```
 
+In the meantime, we can also use `f"{}"` to link strings. It is usually called formatted strings. Format string is very powerful, it can be used to concatenate several different types of variables. However, the `+` operator we've mentioned above can only be used to concatenate **strings**.
+
+Here is how we can use `f"{}"` to concatenate strings:
+
+=== "Python"
+
+    ``` py
+    myString = "hello world"
+    myString = f"{myString}123" # "hello world123"
+    ```
+
+!!! tips
+    There is a good post discussing the pros and cons between the format string and the normal string on [stack overflow](https://stackoverflow.com/questions/59180574/string-concatenation-with-vs-f-string). You can check it out if you are interested.
+
 #### Repeat Strings
 
 In Python, we use `*` operator to repeat strings.
