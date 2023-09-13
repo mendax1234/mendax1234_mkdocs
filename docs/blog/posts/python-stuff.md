@@ -22,13 +22,13 @@ Hey, are you still confused about some interesting functions and methods in Pyth
 
 - [ ] Add Introduction part
 - [ ] Add tuple part
-- [ ] Add list part
-    * [ ]  Add slice part 
+- [x] Add list part
+    * [x]  Add slice part 
 - [x] The difference between Method and Function
-- [ ] Add List Functions part
-- [ ] Add List Methods part
-- [ ] Add String Functions part
-- [ ] Add String Methods part
+- [x] Add List Functions part
+- [x] Add List Methods part
+- [x] Add String Functions part
+- [x] Add String Methods part
 - [ ] Argument and Parameter
 
 ## Introduction
@@ -356,9 +356,9 @@ In Python, we can either use `[]` or `list()` to create a list.
 
 - **Sort**
 
-!!! note
-    Only lists have a **built-in sorting method**
-    Thus, data should be converted to a list if it needs sorting.
+    !!! note
+        Only lists have a **built-in sorting method**
+        Thus, data should be converted to a list if it needs sorting.
 
     e.g. 
 
