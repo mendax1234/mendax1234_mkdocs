@@ -36,7 +36,7 @@ Hey, are you still confused about some interesting functions and methods in Pyth
 > Add something here after finishing the writing of the whole post.
 
 !!! note
-    This post is just a study product during my Python learning, so it may not contain all the aspects of interesting Python functions. Also, this post can be used as a reference to SC1003 **Introduction to Computaional Thinking** in NTU SCSE. BTW, if you find something incorrect in this post, please let me know by either [opening a commit]() or [making a pull request]() if you can fix it. Thank you very much!
+    This post is just a study product during my Python learning, so it may not contain all the aspects of interesting Python functions. Also, this post can be used as a reference to SC1003 **Introduction to Computational Thinking** in NTU SCSE. BTW, if you find something incorrect in this post, please let me know by either [opening a commit]() or [making a pull request]() if you can fix it. Thank you very much!
 
 !!! warning "Important"
     Since I may not have enough time to do all the introduction work of some basic concepts in Python, I will only cover the functions related to a specific topic. If you need some help on basic concepts in Python, try google or something equivalent first, I believe that there are some very useful resources on the Internet. If you are still at a loss, you can also comment at the bottom of this blog. I will help you as soon as possible. Thanks.
@@ -113,7 +113,7 @@ In Python, we use `myString.find()` method to find the first occurrence of the s
     myString.find("world") # 6
     myString.find("worlds") # -1
     ```
-#### `.join()` function
+#### `.join()` method
 In Python, we will `myString.join(target)` method to make a new string by joining all the elements in an iterable (list, tuple, string etc.) separated by `myString`. 
 
 === "Python"
@@ -125,6 +125,22 @@ In Python, we will `myString.join(target)` method to make a new string by joinin
 
 !!! note
     In Python, we can chain **methods** together. i.e. `myString.upper().join("123")` will return `"1HELLO WORLD2HELLO WORLD3"` if `myString = "hello world"`.
+
+#### `.split()` method
+
+- The string method `spilt()` generates a sequence of characters by splitting the string at certain split-characters.
+
+    - Default split-character is the **white space**
+
+- The string method, `split()`, returns a list.
+
+=== "Python"
+
+    ``` py
+    myString = "hello world"
+    newList = myString.split()
+    print(newList) # ["hello", "world"]
+    ```
 
 ### String Functions
 
@@ -253,9 +269,127 @@ In Python, we can either use `[]` or `list()` to create a list.
     myList = list("hello world 123")
     ```
 
+**Similarities between String and List**
+
+- **Concatenate**: `+`(only for the same type.  String + String or List + List. Not String + List)
+- **Repeat**: `*`
+- **Indexing**: the `[ ]` operator, e.g. `lst[3]` returns the fourth element of `lst`.'
+- **Slicing**: the `[ : ]` operator, e.g. `lst[1:3]` returns a list containing the second and third elements of `lst`.
+- **Length**: the `len()` function
+- **Membership**: the `in` operator
+
+**Differences between String and List**
+- Lists can contain any type of element, but strings are limited to characters.
+
+    E.g. `l = [1, 'bill', 1.2345, True]`
+
+- Lists are **mutable**, but strings are **immutable**.
+
+- Lists are designated with `[ ]`, with elements separated by commas`;`, strings use`""`.
+
+**List Structure**
+
+| myList         | 1  | 'a' | 3.14 | True | 
+|:--------------:|:--:|:---:|:----:|:----:|
+| Index Forward  | 0  | 1   | 2    | 3    |
+| Index Backward | -4 | -3  | -2   | -1   |
+
+`myList[1]` &rarr; `'a'`
+`myList[:3]` &rarr; `[1, 'a', 3.14]` 
+
 #### List Methods
 
+##### Basic methods
+
+- **Index assignment**
+
+    e.g. `myList[0] = 'a'`
+
+- **Append**
+
+    e.g. `myList.append(e) // e can be anything`
+
+- **Extend**
+
+    e.g. `myList.extend(['a', 'b', 'c'])`
+
+- **Pop**
+
+    e.g. `myList.pop(i) // i: index (default:-1)`
+
+- **Insert**
+
+    e.g. `myList.insert(i, x) // i: index, x: element`
+
+    e.g. 
+    
+    === "Python"
+
+        ``` py
+        myList = [1, 2, 3]
+        myList.insert(1, 4) # [1, 4, 2, 3]
+        myList.insert(-1, 4) # [1, 4, 2, 4, 3]
+        ```
+
+- **Remove**
+
+    !!! note
+        The method will remove the first occurrence of the element in the list. Then the second. Etc.
+
+    e.g. `myList.remove(x) // x: element`
+
+    e.g.
+
+    === "Python"
+
+        ``` py
+        myList = [1, 2, 3, 2, 1, 2]
+        myList.remove(2) # [1, 3, 2, 1, 2]
+        myList.remove(2) # [1, 3, 1, 2]
+        myList.remove(2) # [1, 3, 1]
+        ```
+
+- **Reverse**
+
+    e.g. `myList.reverse()`
+
+- **Sort**
+
+!!! note
+    Only lists have a **built-in sorting method**
+    Thus, data should be converted to a list if it needs sorting.
+
+    e.g. 
+
+    === "Python"
+
+        ``` py
+        myLst = list('xyzabc') # iterable to constructor
+        myLst.sort() # ['a', 'b', 'c', 'x', 'y', 'z']
+        # convert back to a string
+        sortStr = ''.join(myLst) # 'abcxyz'
+        ```
+
 #### List Functions
+
+##### Basic functions
+
+- `len()`: Number of elements in the list(top level)
+
+    e.g. `len([1, [1, 2], 3])` &rarr; `3`
+
+- `min()`: Minimum value in the list
+
+    e.g. `min([1, 2, 3])` &rarr; `1`
+
+- `max()`: Maximum value in the list
+
+    e.g. `max([1, 2, 3])` &rarr; `3`
+
+- `sum()`: Sum of the elements, numeric only
+
+    !!! note
+        make sure the elements are numeric. You can't add numbers to strings or lists.
 
 ### Dictionary
 

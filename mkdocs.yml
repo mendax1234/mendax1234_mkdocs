@@ -104,6 +104,7 @@ nav:
 
 markdown_extensions:
   - footnotes
+  - tables
   - toc:
       permalink: true
   - pymdownx.highlight:
