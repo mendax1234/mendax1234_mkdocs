@@ -295,7 +295,7 @@ In Python, we can either use `[]` or `list()` to create a list.
 **Differences between String and List**
 - Lists can contain any type of element, but strings are limited to characters.
 
-    E.g. `l = [1, 'bill', 1.2345, True]`
+    - E.g. `l = [1, 'bill', 1.2345, True]`
 
 - Lists are **mutable**, but strings are **immutable**.
 
