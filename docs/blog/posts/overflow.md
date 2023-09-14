@@ -1,5 +1,5 @@
 ---
-date: 2023-09-09
+date: 2023-09-14
 authors: [Daniel Wenbo]
 title: Two methods to check overflow in digital logic
 description: >
