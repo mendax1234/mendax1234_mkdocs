@@ -1,5 +1,5 @@
 ---
-date: 2023-09-11
+date: 2023-09-09
 authors: [Daniel Wenbo]
 title: Combinational Circuits in Digital Logic
 description: >
