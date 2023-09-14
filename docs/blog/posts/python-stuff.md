@@ -335,8 +335,6 @@ In Python, we can either use `[]` or `list()` to create a list.
 - **Insert**
 
     e.g. `myList.insert(i, x) // i: index, x: element`
-
-    e.g. 
     
     === "Python"
 
@@ -352,8 +350,6 @@ In Python, we can either use `[]` or `list()` to create a list.
         The method will remove the first occurrence of the element in the list. Then the second. Etc.
 
     e.g. `myList.remove(x) // x: element`
-
-    e.g.
 
     === "Python"
 
