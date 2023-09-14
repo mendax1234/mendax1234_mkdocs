@@ -16,17 +16,12 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://mendax1234.github.io/blog/2023/09/10/adders-in-digital-logic/</loc>
-         <lastmod>2023-09-14</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
          <loc>https://mendax1234.github.io/blog/2023/08/15/the-conversion-between-binary-and-gray-code/</loc>
          <lastmod>2023-09-14</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://mendax1234.github.io/blog/2023/09/11/combinational-circuits-in-digital-logic/</loc>
+         <loc>https://mendax1234.github.io/blog/2023/09/09/combinational-circuits-in-digital-logic/</loc>
          <lastmod>2023-09-14</lastmod>
          <changefreq>daily</changefreq>
     </url>
@@ -37,6 +32,11 @@
     </url>
     <url>
          <loc>https://mendax1234.github.io/blog/2023/08/22/the-first-month-in-ntu/</loc>
+         <lastmod>2023-09-14</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://mendax1234.github.io/blog/2023/09/09/two-methods-to-check-overflow-in-digital-logic/</loc>
          <lastmod>2023-09-14</lastmod>
          <changefreq>daily</changefreq>
     </url>
