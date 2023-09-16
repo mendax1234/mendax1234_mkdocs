@@ -6,13 +6,14 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="Daniel Wenbo's personal site.">
+        <meta name="description" content="A Brief Introduction to Overflow in two's complement system
+">
       
       
         <meta name="author" content="Daniel Wenbo">
       
       
-        <link rel="canonical" href="https://mendax1234.github.io/blog/2023/09/14/two-methods-to-check-overflow-in-digital-logic/">
+        <link rel="canonical" href="https://mendax1234.github.io/blog/2023/09/14/overflow-in-twos-complement-system/">
       
       
         <link rel="prev" href="../../09/combinational-circuits-in-digital-logic/">
@@ -24,7 +25,7 @@
     
     
       
-        <title>Two methods to check overflow in digital logic - Daniel Wenbo's Site</title>
+        <title>Overflow in two's complement system - Daniel Wenbo's Site</title>
       
     
     
@@ -88,6 +89,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#overflow-in-twos-complement-system" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -125,7 +131,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Two methods to check overflow in digital logic
+              Overflow in two's complement system
             
           </span>
         </div>
@@ -586,6 +592,104 @@
   
   
   
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#twos-complement-system" class="md-nav__link">
+    Two's complement system
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#two-methods-to-detect-overflow-in-twos-complement" class="md-nav__link">
+    Two methods to detect overflow in two's complement
+  </a>
+  
+    <nav class="md-nav" aria-label="Two methods to detect overflow in two's complement">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#method-1-compare-the-sign-bit-of-operands-and-result" class="md-nav__link">
+    Method 1: Compare the sign bit of operands and result
+  </a>
+  
+    <nav class="md-nav" aria-label="Method 1: Compare the sign bit of operands and result">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#conclusion" class="md-nav__link">
+    Conclusion
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#reasons-behind" class="md-nav__link">
+    Reasons behind
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#implementation" class="md-nav__link">
+    Implementation
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#method-2-compare-the-carry-on-bit-and-carry-out-bit-of-the-msb-column" class="md-nav__link">
+    Method 2: Compare the carry-on bit and carry-out bit of the MSB column
+  </a>
+  
+    <nav class="md-nav" aria-label="Method 2: Compare the carry-on bit and carry-out bit of the MSB column">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#conclusion_1" class="md-nav__link">
+    Conclusion
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#reasons-behind_1" class="md-nav__link">
+    Reasons behind
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#implementation_1" class="md-nav__link">
+    Implementation
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
   
 </nav>
                   </div>
@@ -657,7 +761,7 @@
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 20a8 8 0 0 0 8-8 8 8 0 0 0-8-8 8 8 0 0 0-8 8 8 8 0 0 0 8 8m0-18a10 10 0 0 1 10 10 10 10 0 0 1-10 10C6.47 22 2 17.5 2 12A10 10 0 0 1 12 2m.5 5v5.25l4.5 2.67-.75 1.23L11 13V7h1.5Z"/></svg>
                     <span class="md-ellipsis">
                       
-                        1 min read
+                        3 min read
                       
                     </span>
                   </div>
@@ -677,16 +781,55 @@
   
 
 
-  <h1>Two methods to check overflow in digital logic</h1>
-
+<h1 id="overflow-in-twos-complement-system">Overflow in two's complement system<a class="headerlink" href="#overflow-in-twos-complement-system" title="Permanent link">&para;</a></h1>
+<p>In this post, I will mainly discuss <strong>two methods to detect overflow in two's complement system and the reasons behind them</strong>. Besides, some information about <strong>overflow bit, carry bit, sign bit and zero bit</strong> in ALU, the practical use of two's complement and unsigned binary system will be included.</p>
 <!-- more -->
+
+<h2 id="twos-complement-system">Two's complement system<a class="headerlink" href="#twos-complement-system" title="Permanent link">&para;</a></h2>
+<p>According to <a href="https://en.wikipedia.org/wiki/Two%27s_complement">Wikipedia</a>, two's complement is the most common method of representing signed (positive, negative, and zero) integers on computers,[1]and more generally, fixed point binary values. Two's complement uses the binary digit with the greatest place value as the sign to indicate whether the binary number is positive or negative. When the most significant bit is 1, the number is signed as negative; and when the most significant bit is 0 the number is signed as positive.</p>
+<p>When you study the two's complement, one important thing you can't avoid is to learn how to detect the overflow. In the following section, I will introduce two methods to detect overflow in two's complement system and the reasons behind them.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>In this post, our default is the addition and subtraction between <strong>two numbers</strong>. If you are facing the addition between more than two numbers, you can use the following method to detect the overflow between the first two numbers, and then use the result of the first two numbers to detect the overflow between the third number and the result of the first two numbers. Repeat this process until you get the final result.</p>
+</div>
+<h2 id="two-methods-to-detect-overflow-in-twos-complement">Two methods to detect overflow in two's complement<a class="headerlink" href="#two-methods-to-detect-overflow-in-twos-complement" title="Permanent link">&para;</a></h2>
+<h3 id="method-1-compare-the-sign-bit-of-operands-and-result">Method 1: Compare the sign bit of operands and result<a class="headerlink" href="#method-1-compare-the-sign-bit-of-operands-and-result" title="Permanent link">&para;</a></h3>
+<h4 id="conclusion">Conclusion<a class="headerlink" href="#conclusion" title="Permanent link">&para;</a></h4>
+<p>If the sign bit, also known as MSB(Most Significant Bit), of the two operands are the same, but the sign bit of the result is different from the sign bit of the operands, then the overflow occurs.</p>
+<h4 id="reasons-behind">Reasons behind<a class="headerlink" href="#reasons-behind" title="Permanent link">&para;</a></h4>
+<ol>
+<li>
+<p><strong>Why do we need to check whether the sign bit of the two operands are the same?</strong></p>
+<p>Since if the sign bit of the two operands are different, the result will always be in the range of the two operands, which means the result will never overflow. Specifically speaking, if you subtract A from B, the result will always be smaller than B. Since both A and B are in the range which can be represented by two's complement, the result will also always be in the range which can be represented by two's complement. Thus, <strong>no overflow will occur</strong> when the sign bit of the two operands are different. Contrarally speaking, <strong>overflow will only happen</strong> when the sign bit of the two operands are the same.</p>
+</li>
+<li>
+<p><strong>How to understand the <a href="#conclusion">Conclusion</a>?</strong></p>
+<p>To rigorously prove that, the problem can be divided into two cases. </p>
+<ul>
+<li>
+<p>case one:</p>
+<p>The sign bit of the two operands are both 0 while the sign bit of the result if 1. Before you move on, you need to know that in the two's complement system, if the sign bit is 0, it means that the number is positive. If the sign bit is 1, it means the number is negative. So, now let's go back to our case one. In case one, the sign bit of the two operands are both 0, which means the two operands are both positive. Since the sign bit of the result is 1, which means the result is negative. Now, you will find that when you add this two positive operands, you get a negative result. There must be something wrong! Yes, the result is out of the range which can be represented by two's complement. Thus, overflow occurs.</p>
+</li>
+<li>
+<p>case two:</p>
+<p>Now the sign bit of your two operands are both 1, while the sign bit of the result is 0. Similar with case one, now you will find that during this time, you add two positive number but get a negative number as the result. This time, you must be confident that an overflow has happened.</p>
+</li>
+</ul>
+</li>
+</ol>
+<p>In conclusion, after analyzing these two cases, I have proved that the <a href="#conclusion">Conclusion</a> we have mentioned above is correct. Now, you may have a basic understanding of the overflow in two's complement system.</p>
+<h4 id="implementation">Implementation<a class="headerlink" href="#implementation" title="Permanent link">&para;</a></h4>
+<h3 id="method-2-compare-the-carry-on-bit-and-carry-out-bit-of-the-msb-column">Method 2: Compare the carry-on bit and carry-out bit of the MSB column<a class="headerlink" href="#method-2-compare-the-carry-on-bit-and-carry-out-bit-of-the-msb-column" title="Permanent link">&para;</a></h3>
+<h4 id="conclusion_1">Conclusion<a class="headerlink" href="#conclusion_1" title="Permanent link">&para;</a></h4>
+<h4 id="reasons-behind_1">Reasons behind<a class="headerlink" href="#reasons-behind_1" title="Permanent link">&para;</a></h4>
+<h4 id="implementation_1">Implementation<a class="headerlink" href="#implementation_1" title="Permanent link">&para;</a></h4>
 
   <hr>
 <div class="md-source-file">
   <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">September 14, 2023</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">September 16, 2023</span>
       
         <br>
         Created:
