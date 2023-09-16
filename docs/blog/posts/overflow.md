@@ -24,7 +24,7 @@ According to [Wikipedia](https://en.wikipedia.org/wiki/Two%27s_complement), two'
 When you study the two's complement, one important thing you can't avoid is to learn how to detect the overflow. In the following section, I will introduce two methods to detect overflow in two's complement system and the reasons behind them.
 
 !!! note
-    In this post, our default is the addition and subtraction between **two numbers**. If you are facing the addition between more than two numbers, you can use the following method to detect the overflow between the first two numbers, and then use the result of the first two numbers to detect the overflow between the third number and the result of the first two numbers. Repeat this process until you get the final result.
+	In this post, our default is the addition and subtraction between **two numbers**. If you are facing the addition between more than two numbers, you can use the following method to detect the overflow between the first two numbers, and then use the result of the first two numbers to detect the overflow between the third number and the result of the first two numbers. Repeat this process until you get the final result.
 
 ## Two methods to detect overflow in two's complement
 
@@ -38,19 +38,19 @@ If the sign bit, also known as MSB(Most Significant Bit), of the two operands ar
 
 1. __Why do we need to check whether the sign bit of the two operands are the same?__
 
-    Since if the sign bit of the two operands are different, the result will always be in the range of the two operands, which means the result will never overflow. Specifically speaking, if you subtract A from B, the result will always be smaller than B. Since both A and B are in the range which can be represented by two's complement, the result will also always be in the range which can be represented by two's complement. Thus, **no overflow will occur** when the sign bit of the two operands are different. Contrarally speaking, **overflow will only happen** when the sign bit of the two operands are the same.
+	Since if the sign bit of the two operands are different, the result will always be in the range of the two operands, which means the result will never overflow. Specifically speaking, if you subtract A from B, the result will always be smaller than B. Since both A and B are in the range which can be represented by two's complement, the result will also always be in the range which can be represented by two's complement. Thus, **no overflow will occur** when the sign bit of the two operands are different. Contrarally speaking, **overflow will only happen** when the sign bit of the two operands are the same.
 
 2. __How to understand the [Conclusion](#conclusion)?__
 
-    To rigorously prove that, the problem can be divided into two cases. 
-    
-    - case one:
+	To rigorously prove that, the problem can be divided into two cases. 
+	
+	- case one:
 
-        The sign bit of the two operands are both 0 while the sign bit of the result if 1. Before you move on, you need to know that in the two's complement system, if the sign bit is 0, it means that the number is positive. If the sign bit is 1, it means the number is negative. So, now let's go back to our case one. In case one, the sign bit of the two operands are both 0, which means the two operands are both positive. Since the sign bit of the result is 1, which means the result is negative. Now, you will find that when you add this two positive operands, you get a negative result. There must be something wrong! Yes, the result is out of the range which can be represented by two's complement. Thus, overflow occurs.
+		The sign bit of the two operands are both 0 while the sign bit of the result if 1. Before you move on, you need to know that in the two's complement system, if the sign bit is 0, it means that the number is positive. If the sign bit is 1, it means the number is negative. So, now let's go back to our case one. In case one, the sign bit of the two operands are both 0, which means the two operands are both positive. Since the sign bit of the result is 1, which means the result is negative. Now, you will find that when you add this two positive operands, you get a negative result. There must be something wrong! Yes, the result is out of the range which can be represented by two's complement. Thus, overflow occurs.
 
-    - case two:
-          
-          Now the sign bit of your two operands are both 1, while the sign bit of the result is 0. Similar with case one, now you will find that during this time, you add two positive number but get a negative number as the result. This time, you must be confident that an overflow has happened.
+	- case two:
+		  
+		Now the sign bit of your two operands are both 1, while the sign bit of the result is 0. Similar with case one, now you will find that during this time, you add two positive number but get a negative number as the result. This time, you must be confident that an overflow has happened.
 
   In conclusion, after analyzing these two cases, I have proved that the [Conclusion](#conclusion) we have mentioned above is correct. Now, you may have a basic understanding of the overflow in two's complement system.
 
