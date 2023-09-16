@@ -12,7 +12,7 @@ comments: true
 
 # Overflow in two's complement system
 
-In this post, I will mainly discuss **two methods to detect overflow in two's complement system and the reasons behind them**. Besides, some information about **overflow bit, carry bit, sign bit and zero bit** in ALU, the practical use of two's complement and unsigned binary system will be included.
+In this post, I will mainly discuss **two methods to detect overflow in two's complement system and the reasons behind them**. Besides, some information about **overflow bit, carry bit, sign bit and zero bit** in ALU, **the practical use of two's complement and unsigned binary system** will be included.
 
 <!-- more -->
 
