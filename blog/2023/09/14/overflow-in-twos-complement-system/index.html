@@ -761,7 +761,7 @@
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 20a8 8 0 0 0 8-8 8 8 0 0 0-8-8 8 8 0 0 0-8 8 8 8 0 0 0 8 8m0-18a10 10 0 0 1 10 10 10 10 0 0 1-10 10C6.47 22 2 17.5 2 12A10 10 0 0 1 12 2m.5 5v5.25l4.5 2.67-.75 1.23L11 13V7h1.5Z"/></svg>
                     <span class="md-ellipsis">
                       
-                        3 min read
+                        4 min read
                       
                     </span>
                   </div>
@@ -821,7 +821,18 @@
 <h4 id="implementation">Implementation<a class="headerlink" href="#implementation" title="Permanent link">&para;</a></h4>
 <h3 id="method-2-compare-the-carry-on-bit-and-carry-out-bit-of-the-msb-column">Method 2: Compare the carry-on bit and carry-out bit of the MSB column<a class="headerlink" href="#method-2-compare-the-carry-on-bit-and-carry-out-bit-of-the-msb-column" title="Permanent link">&para;</a></h3>
 <h4 id="conclusion_1">Conclusion<a class="headerlink" href="#conclusion_1" title="Permanent link">&para;</a></h4>
+<p>If the carry-on bit and carry-out bit of the MSB column are different, then the overflow occurs.</p>
 <h4 id="reasons-behind_1">Reasons behind<a class="headerlink" href="#reasons-behind_1" title="Permanent link">&para;</a></h4>
+<p>To rigorously prove that, the problem can be divided into two cases since in a binary system, we only have 0 and 1.</p>
+<ul>
+<li>case one:</li>
+</ul>
+<p>The carry-on bit is 1 and the carry-out bit is 0. So, in order to let the carry-out bit be 1, the sign bit of the two operands must be 0. (You can easily understand this by trying yourself. i.e. If any of the sign bit is 1, then 1 + 1 = 10, which will generate a carry-out bit of 1. Contraction!) Now, let's see the MSB column, which contains three numbers, above the line are the sign bits of two operands. Below the line is the sign bit of the result. Based on the previous statement, from top to bottom, the three numbers should be 0, 0, 1. Now, you will find that the sign bit of the result is different from the sign bit of the two operands. Based on what we have already discussed in <a href="#method-1-compare-the-sign-bit-of-operands-and-result">Method 1</a>, you will find that an overflow has happened.</p>
+<ul>
+<li>case two:</li>
+</ul>
+<p>Now the carry-on bit is 0 and the carry-out bit is 1. Using the similar method discussed in <strong>case one</strong>, you can easily find that the overflow has happened. So, I won't repeat it here.</p>
+<p>Now, <a href="#method-2-compare-the-carry-on-bit-and-carry-out-bit-of-the-msb-column">Method 2</a> has also been proved to be correct! Congratulations! Now, hope that you already have a brand new undestanding of the overflow in two's complement system.</p>
 <h4 id="implementation_1">Implementation<a class="headerlink" href="#implementation_1" title="Permanent link">&para;</a></h4>
 
   <hr>
@@ -829,7 +840,7 @@
   <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">September 16, 2023</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">September 17, 2023</span>
       
         <br>
         Created:
