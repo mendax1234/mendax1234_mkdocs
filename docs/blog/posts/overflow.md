@@ -29,7 +29,6 @@ When you study the two's complement, one important thing you can't avoid is to l
 ## Two methods to detect overflow in two's complement
 
 ### Method 1: Compare the sign bit of operands and result
-
 #### Conclusion
 
 If the sign bit, also known as MSB(Most Significant Bit), of the two operands are the same, but the sign bit of the result is different from the sign bit of the operands, then the overflow occurs.
@@ -52,14 +51,27 @@ If the sign bit, also known as MSB(Most Significant Bit), of the two operands ar
 		  
 		Now the sign bit of your two operands are both 1, while the sign bit of the result is 0. Similar with case one, now you will find that during this time, you add two positive number but get a negative number as the result. This time, you must be confident that an overflow has happened.
 
-  In conclusion, after analyzing these two cases, I have proved that the [Conclusion](#conclusion) we have mentioned above is correct. Now, you may have a basic understanding of the overflow in two's complement system.
+In conclusion, after analyzing these two cases, I have proved that the [Conclusion](#conclusion) we have mentioned above is correct. Now, you may have a basic understanding of the overflow in two's complement system.
 
 #### Implementation
 
 ### Method 2: Compare the carry-on bit and carry-out bit of the MSB column
-
 #### Conclusion
 
+If the carry-on bit and carry-out bit of the MSB column are different, then the overflow occurs.
+
 #### Reasons behind
+
+To rigorously prove that, the problem can be divided into two cases since in a binary system, we only have 0 and 1.
+
+- case one:
+
+  The carry-on bit is 1 and the carry-out bit is 0. So, in order to let the carry-out bit be 1, the sign bit of the two operands must be 0. (You can easily understand this by trying yourself. i.e. If any of the sign bit is 1, then 1 + 1 = 10, which will generate a carry-out bit of 1. Contraction!) Now, let's see the MSB column, which contains three numbers, above the line are the sign bits of two operands. Below the line is the sign bit of the result. Based on the previous statement, from top to bottom, the three numbers should be 0, 0, 1. Now, you will find that the sign bit of the result is different from the sign bit of the two operands. Based on what we have already discussed in [Method 1](#method-1-compare-the-sign-bit-of-operands-and-result), you will find that an overflow has happened.
+
+- case two:
+
+  Now the carry-on bit is 0 and the carry-out bit is 1. Using the similar method discussed in **case one**, you can easily find that the overflow has happened. So, I won't repeat it here.
+
+Now, [Method 2](#method-2-compare-the-carry-on-bit-and-carry-out-bit-of-the-msb-column) has also been proved to be correct! Congratulations! Now, hope that you already have a brand new undestanding of the overflow in two's complement system.
 
 #### Implementation
