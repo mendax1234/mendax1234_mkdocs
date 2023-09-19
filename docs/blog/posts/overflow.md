@@ -55,7 +55,8 @@ the operands, then the overflow occurs.
 
 #### Reasons behind
 
-1. __Why do we need to check whether the sign bit of the two operands are thesame?__
+1. __Why do we need to check whether the sign bit of the two operands are
+the same?__
 
 	Since if the sign bit of the two operands are different, the result will
 	always be in the range of the two operands, which means the result will
