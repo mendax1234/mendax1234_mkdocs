@@ -767,11 +767,11 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#dictionary-list-and-tuple" class="md-nav__link">
-    Dictionary, List and Tuple
+  <a href="#list-dictionary-and-tuple" class="md-nav__link">
+    List, Dictionary and Tuple
   </a>
   
-    <nav class="md-nav" aria-label="Dictionary, List and Tuple">
+    <nav class="md-nav" aria-label="List, Dictionary and Tuple">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -838,6 +838,26 @@
           <li class="md-nav__item">
   <a href="#keys-and-values" class="md-nav__link">
     Keys and Values
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tuples" class="md-nav__link">
+    Tuples
+  </a>
+  
+    <nav class="md-nav" aria-label="Tuples">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#definition" class="md-nav__link">
+    Definition
   </a>
   
 </li>
@@ -924,7 +944,7 @@
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 20a8 8 0 0 0 8-8 8 8 0 0 0-8-8 8 8 0 0 0-8 8 8 8 0 0 0 8 8m0-18a10 10 0 0 1 10 10 10 10 0 0 1-10 10C6.47 22 2 17.5 2 12A10 10 0 0 1 12 2m.5 5v5.25l4.5 2.67-.75 1.23L11 13V7h1.5Z"/></svg>
                     <span class="md-ellipsis">
                       
-                        9 min read
+                        10 min read
                       
                     </span>
                   </div>
@@ -1247,7 +1267,7 @@ of a code. i.e. <code>chr(97)</code> will return <code>"a"</code>.</p>
 </div>
 </div>
 </div>
-<h2 id="dictionary-list-and-tuple">Dictionary, List and Tuple<a class="headerlink" href="#dictionary-list-and-tuple" title="Permanent link">&para;</a></h2>
+<h2 id="list-dictionary-and-tuple">List, Dictionary and Tuple<a class="headerlink" href="#list-dictionary-and-tuple" title="Permanent link">&para;</a></h2>
 <p>First, before we talk about Dictionary, List and Tuple, we may need to know what
 is a <strong>Composite Type</strong>. A Composite Type is a <em>data type</em> which is constructed
 using <em>primitive</em> and <em>other composite types</em>. Also, it can be regarded as a new
@@ -1488,7 +1508,7 @@ example, if you want to add value, you need to use <code>myList.append()</code>.
 <p class="admonition-title">Note</p>
 <p>If you want to use <code>.append()</code> to add values to your key, make sure to
 initialize your key's value with a <code>list</code>. Otherwise, the program will crash
-because only <code>list</code> in Python has the <code>append()</code> method.</p>
+because the default value tupe is <code>string</code> and it is immutable.</p>
 </div>
 <p><strong>Get the <code>keys</code> and <code>values</code> in the dictionary</strong></p>
 <p>Python is very powerful, if you want to get the <code>keys</code> and <code>values</code> of a
@@ -1547,6 +1567,29 @@ conveniently.</p>
 <code>{keys:values}</code> in the dictionary. Instead, it will add a new one at the end
 of the dictionary.</p>
 </div>
+<p><strong>Clear the Dictionary</strong></p>
+<p>You can use <code>myDict.clear()</code> to clear the dictionary.</p>
+<div class="tabbed-set tabbed-alternate" data-tabs="24:1"><input checked="checked" id="__tabbed_24_1" name="__tabbed_24" type="radio" /><div class="tabbed-labels"><label for="__tabbed_24_1">Python</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<div class="highlight"><pre><span></span><code><a id="__codelineno-23-1" name="__codelineno-23-1" href="#__codelineno-23-1"></a><span class="n">myDict</span> <span class="o">=</span> <span class="p">{</span><span class="s2">&quot;userName&quot;</span><span class="p">:</span><span class="s1">&#39;Jack&#39;</span><span class="p">,</span> <span class="s2">&quot;userPassword&quot;</span><span class="p">:</span><span class="s1">&#39;123456&#39;</span><span class="p">}</span>
+<a id="__codelineno-23-2" name="__codelineno-23-2" href="#__codelineno-23-2"></a><span class="n">myDict</span><span class="o">.</span><span class="n">clear</span><span class="p">()</span>
+<a id="__codelineno-23-3" name="__codelineno-23-3" href="#__codelineno-23-3"></a><span class="nb">print</span><span class="p">(</span><span class="n">myDict</span><span class="p">)</span> <span class="c1"># {}</span>
+</code></pre></div>
+</div>
+</div>
+</div>
+<h3 id="tuples">Tuples<a class="headerlink" href="#tuples" title="Permanent link">&para;</a></h3>
+<p>After knowing <a href="#list">List</a> and <a href="#dictionary">Dictionary</a>, I will now go on to
+talk about the <a href="#tuples">Tuple</a> in Python.</p>
+<h4 id="definition">Definition<a class="headerlink" href="#definition" title="Permanent link">&para;</a></h4>
+<p>Tuples are <strong>immutable</strong> <strong>lists</strong>. Notice that there are two key words here,
+one is <strong>immutable</strong>, indicating that you the elements in the tuple can't be
+modified. The other is <strong>lists</strong>, indicating that tuples are similar to lists.
+Thus tuples have some similar methods and functions with lists.</p>
+<p>Besides, you also need to know that tuples are designated with <code>(,)</code>. This is
+important because when you create a tuple with one element, you <strong>must</strong> add a 
+comma, also a pair of parentheses. i.e. <code>myTuple = (1,)</code></p>
 
   <hr>
 <div class="md-source-file">
