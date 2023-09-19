@@ -296,7 +296,7 @@ In Python, we use `\` to escape characters.
     print(myString) # "hello "world""
     ```
 
-## Dictionary, List and Tuple
+## List, Dictionary and Tuple
 
 First, before we talk about Dictionary, List and Tuple, we may need to know what
 is a **Composite Type**. A Composite Type is a *data type* which is constructed
@@ -510,7 +510,7 @@ example, if you want to add value, you need to use `myList.append()`.
 !!! note
     If you want to use `.append()` to add values to your key, make sure to
     initialize your key's value with a `list`. Otherwise, the program will crash
-    because only `list` in Python has the `append()` method.
+    because the default value tupe is `string` and it is immutable.
 
 **Get the `keys` and `values` in the dictionary**
 
@@ -565,3 +565,32 @@ Below is the demo:
     Every time you call the `update()` method, it won't erase your original
     `{keys:values}` in the dictionary. Instead, it will add a new one at the end
     of the dictionary.
+
+**Clear the Dictionary**
+
+You can use `myDict.clear()` to clear the dictionary.
+
+=== "Python"
+
+    ``` py
+    myDict = {"userName":'Jack', "userPassword":'123456'}
+    myDict.clear()
+    print(myDict) # {}
+    ```
+
+### Tuples
+
+After knowing [List](#list) and [Dictionary](#dictionary), I will now go on to
+talk about the [Tuple](#tuples) in Python.
+
+#### Definition
+
+Tuples are **immutable** **lists**. Notice that there are two key words here,
+one is **immutable**, indicating that you the elements in the tuple can't be
+modified. The other is **lists**, indicating that tuples are similar to lists.
+Thus tuples have some similar methods and functions with lists.
+
+Besides, you also need to know that tuples are designated with `(,)`. This is
+important because when you create a tuple with one element, you **must** add a 
+comma, also a pair of parentheses. i.e. `myTuple = (1,)`
+
