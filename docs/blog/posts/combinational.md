@@ -3,7 +3,8 @@ date: 2023-09-09
 authors: [Daniel Wenbo]
 title: Combinational Circuits in Digital Logic
 description: >
-  This post will discuss the combinational Circuits in Digital Logic and other things related.
+  This post will discuss the combinational Circuits in Digital Logic and other
+  things related.
 categories:
   - NTU SCSE Resources
 links:

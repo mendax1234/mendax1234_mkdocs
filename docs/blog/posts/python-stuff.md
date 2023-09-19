@@ -11,12 +11,17 @@ links:
 ---
 
 # Tricky Python
-Hey, are you still confused about some interesting functions and methods in Python. Don't worry, after reading this post, maybe you will gain a quick command of these interesting but "tricky" functions and methods in Python. 
+Hey, are you still confused about some interesting functions and methods in
+Python. Don't worry, after reading this post, maybe you will gain a quick
+command of these interesting but "tricky" functions and methods in Python. 
 
 <!-- more -->
 
 !!! warning "Important"
-    **methods** and **functions** are not the same thing. A **function** is a *piece of code* that performs some operations. i.e. `len()`. Unlike a **function**, a **method** is applied in the context of a particular object. This is indicated by the *dot notation* invocation. i.e. `myList.append()`. 
+    **methods** and **functions** are not the same thing. A **function** is a
+    *piece of code* that performs some operations. i.e. `len()`. Unlike a
+    **function**, a **method** is applied in the context of a particular object.
+    This is indicated by the *dot notation* invocation. i.e. `myList.append()`. 
 
 **Task list for this post:**
 
@@ -36,14 +41,27 @@ Hey, are you still confused about some interesting functions and methods in Pyth
 > Add something here after finishing the writing of the whole post.
 
 !!! note
-    This post is just a study product during my Python learning, so it may not contain all the aspects of interesting Python functions. Also, this post can be used as a reference to SC1003 **Introduction to Computational Thinking** in NTU SCSE. BTW, if you find something incorrect in this post, please let me know by either [opening a commit]() or [making a pull request]() if you can fix it. Thank you very much!
+    This post is just a study product during my Python learning, so it may not
+    contain all the aspects of interesting Python functions. Also, this post can
+    be used as a reference to SC1003 **Introduction to Computational Thinking** 
+    in NTU SCSE. BTW, if you find something incorrect in this post, please let
+    me know by either [opening a commit]() or [making a pull request]() if you
+    can fix it. Thank you very much!
 
 !!! warning "Important"
-    Since I may not have enough time to do all the introduction work of some basic concepts in Python, I will only cover the functions related to a specific topic. If you need some help on basic concepts in Python, try google or something equivalent first, I believe that there are some very useful resources on the Internet. If you are still at a loss, you can also comment at the bottom of this blog. I will help you as soon as possible. Thanks.
+    Since I may not have enough time to do all the introduction work of some
+    basic concepts in Python, I will only cover the functions related to a
+    specific topic. If you need some help on basic concepts in Python, try
+    google or something equivalent first, I believe that there are some very
+    useful resources on the Internet. If you are still at a loss, you can also
+    comment at the bottom of this blog. I will help you as soon as possible.
+    Thanks.
 
 ## Boolean Operands
 
-1. In Python, you can use either `&` or `and` to implement the **and** operation. Similarly, you can use either `or` or `|` to represent the **or** operation.
+1. In Python, you can use either `&` or `and` to implement the **and**
+operation. Similarly, you can use either `or` or `|` to represent the **or**
+operation.
 
 ## String
 
@@ -51,7 +69,8 @@ Hey, are you still confused about some interesting functions and methods in Pyth
 
 #### `.upper()` `.lower()` 
 
-In Python, we will use `myString.upper()` and `myString.lower()` to convert the string to upper or lower letters.
+In Python, we will use `myString.upper()` and `myString.lower()` to convert the
+string to upper or lower letters.
 
 === "Python"
 
@@ -63,7 +82,10 @@ In Python, we will use `myString.upper()` and `myString.lower()` to convert the 
 
 #### `.isUpper()` `isLower()` `isDigit()`
 
-Python has provided us with some very useful functions, they are `string.isUpper()`, `string.isLower()`, `string.isDigit()`. These functions can help us quickly check whether there is a Upper or lower letter or a digit in the string.
+Python has provided us with some very useful functions, they are
+`string.isUpper()`, `string.isLower()`, `string.isDigit()`. These functions can
+help us quickly check whether there is a Upper or lower letter or a digit in the
+string.
 
 Below is the Demo:
 
@@ -96,15 +118,24 @@ Below is the Demo:
 **Check Special Letters**
 
 !!! note
-    This is a tricky question since the definition of **special letter** here is not clearly defined. Maybe it means the special letters on your keyboard, or it may be some other special letters which are not on your keyboard. That's really tricky. But I will still provide two methods to try to solve this question.
+    This is a tricky question since the definition of **special letter** here is
+    not clearly defined. Maybe it means the special letters on your keyboard, or
+    it may be some other special letters which are not on your keyboard. That's
+    really tricky. But I will still provide two methods to try to solve this
+    question.
 
-1. Use a dictionary to store all the special letters. Then you can easily use `in` keyword to check if there is a special letter in the string.
+1. Use a dictionary to store all the special letters. Then you can easily use
+`in` keyword to check if there is a special letter in the string.
 
-2. Try using the ASCII table. Firstly, you should convert the letter to ASCII and then see if it is in the correct range of special letters in the ASCII table.
+2. Try using the ASCII table. Firstly, you should convert the letter to 
+ASCIIand then see if it is in the correct range of special letters in the ASCII
+table.
 
 #### `.find()`
 
-In Python, we use `myString.find()` method to find the first occurrence of the specified value. If the value is not found, the `find()` method returns `-1`, otherwise it returns the index of the first occurrence of the specified value.
+In Python, we use `myString.find()` method to find the first occurrence of the
+specified value. If the value is not found, the `find()` method returns `-1`,
+otherwise it returns the index of the first occurrence of the specified value.
 
 === "Python"
 
@@ -114,7 +145,9 @@ In Python, we use `myString.find()` method to find the first occurrence of the s
     myString.find("worlds") # -1
     ```
 #### `.join()`
-In Python, we will `myString.join(target)` method to make a new string by joining all the elements in an iterable (list, tuple, string etc.) separated by `myString`. 
+In Python, we will `myString.join(target)` method to make a new string by
+joining all the elements in an iterable (list, tuple, string etc.) separated by 
+`myString`. 
 
 === "Python"
 
@@ -124,11 +157,14 @@ In Python, we will `myString.join(target)` method to make a new string by joinin
     ```
 
 !!! note
-    In Python, we can chain **methods** together. i.e. `myString.upper().join("123")` will return `"1HELLO WORLD2HELLO WORLD3"` if `myString = "hello world"`.
+    In Python, we can chain **methods** together. i.e. 
+    `myString.upper().join("123")` will return `"1HELLO WORLD2HELLO WORLD3"`
+    if `myString = "hello world"`.
 
 #### `.split()`
 
-- The string method `spilt()` generates a sequence of characters by splitting the string at certain split-characters.
+- The string method `spilt()` generates a sequence of characters by splitting
+the string at certain split-characters.
 
     - Default split-character is the **white space**
 
@@ -167,7 +203,10 @@ In Python, we use `+` operator to concatenate strings.
     myString = myString + "123" # "hello world123"
     ```
 
-In the meantime, we can also use `f"{}"` to link strings. It is usually called formatted strings. Format string is very powerful, it can be used to concatenate several different types of variables. However, the `+` operator we've mentioned above can only be used to concatenate **strings**.
+In the meantime, we can also use `f"{}"` to link strings. It is usually called
+formatted strings. Format string is very powerful, it can be used to concatenate
+several different types of variables. However, the `+` operator we've mentioned
+above can only be used to concatenate **strings**.
 
 Here is how we can use `f"{}"` to concatenate strings:
 
@@ -179,7 +218,9 @@ Here is how we can use `f"{}"` to concatenate strings:
     ```
 
 !!! tips
-    There is a good post discussing the pros and cons between the format string and the normal string on [stack overflow](https://stackoverflow.com/questions/59180574/string-concatenation-with-vs-f-string). You can check it out if you are interested.
+    There is a good post discussing the pros and cons between the format string
+    and the normal string on [stack overflow](https://stackoverflow.com/questions/59180574/string-concatenation-with-vs-f-string). You can check it out if you are
+    interested.
 
 #### Repeat Strings
 
@@ -193,7 +234,8 @@ In Python, we use `*` operator to repeat strings.
     ```
 
 #### Membership Operations
-In Python, we use `in` keyword to check if a string is present in another string. i.e. `if "hello" in myString:`
+In Python, we use `in` keyword to check if a string is present in another
+string. i.e. `if "hello" in myString:`
 
 === "Python"
 
@@ -237,7 +279,10 @@ The index of a String
 <p align="center"> <img src="/blog/python-stuff/String-index.png" title = "String Index"> </p>
 
 #### Getting the code
-There are two common systems for representing characters: ASCII and Unicode. In Python, we use `ord()` function to get the code of a character. i.e. `ord("a")` will return `97`. And vice versa, we use `chr()` function to get the character of a code. i.e. `chr(97)` will return `"a"`.
+There are two common systems for representing characters: ASCII and Unicode. In
+Python, we use `ord()` function to get the code of a character. i.e. `ord("a")`
+will return `97`. And vice versa, we use `chr()` function to get the character
+of a code. i.e. `chr(97)` will return `"a"`.
 
 <p align="center"> <img src="/blog/python-stuff/ASCII.jpg" title = "ASCII Table"> </p>
 
@@ -253,14 +298,22 @@ In Python, we use `\` to escape characters.
 
 ## Dictionary, List and Tuple
 
-First, before we talk about Dictionary, List and Tuple, we may need to know what is a **Composite Type**. A Composite Type is a *data type* which is constructed using *primitive* and *other composite types*. Also, it can be regarded as a new data type made from existing ones.
+First, before we talk about Dictionary, List and Tuple, we may need to know what
+is a **Composite Type**. A Composite Type is a *data type* which is constructed
+using *primitive* and *other composite types*. Also, it can be regarded as a new
+data type made from existing ones.
 
-Then, we may need to know about **data structures**. **Data structure** are particular ways of storing data to make some operations easier or more efficient. Different data structures have different characteristics.
+Then, we may need to know about **data structures**. **Data structure** are
+particular ways of storing data to make some operations easier or more
+efficient. Different data structures have different characteristics.
 
-And now, you may find the **Dictionary**, **List** and **Tuple** are all data structures in Python. They are also three **Composite Types**. So, let's talk about them one by one.
+And now, you may find the **Dictionary**, **List** and **Tuple** are all data
+structures in Python. They are also three **Composite Types**. So, let's talk
+about them one by one.
 
 !!! warning "Important"
-    In this section, `myDict`, `myList` and `myTuple` will be the default name of these three types of data structures I will use in Python.
+    In this section, `myDict`, `myList` and `myTuple` will be the default name
+    of these three types of data structures I will use in Python.
 
 ### List
 Let's start from **List** because it is the most fundamental one.
@@ -270,7 +323,9 @@ Let's start from **List** because it is the most fundamental one.
 Python list is an ordered sequence of items.
 
 !!! note
-    **String** is also an ordered sequence of items. But the difference between **String** and **List** is that **String** is immutable while **List** is mutable.
+    **String** is also an ordered sequence of items. But the difference between
+    **String** and **List** is that **String** is immutable while **List** is
+    mutable.
 
 **How to create a list?**
 
@@ -285,10 +340,13 @@ In Python, we can either use `[]` or `list()` to create a list.
 
 **Similarities between String and List**
 
-- **Concatenate**: `+`(only for the same type.  String + String or List + List. Not String + List)
+- **Concatenate**: `+`(only for the same type.  String + String or List + List.
+Not String + List)
 - **Repeat**: `*`
-- **Indexing**: the `[ ]` operator, e.g. `lst[3]` returns the fourth element of `lst`.'
-- **Slicing**: the `[ : ]` operator, e.g. `lst[1:3]` returns a list containing the second and third elements of `lst`.
+- **Indexing**: the `[ ]` operator, e.g. `lst[3]` returns the fourth element of
+`lst`.'
+- **Slicing**: the `[ : ]` operator, e.g. `lst[1:3]` returns a list containing
+the second and third elements of `lst`.
 - **Length**: the `len()` function
 - **Membership**: the `in` operator
 
@@ -299,7 +357,8 @@ In Python, we can either use `[]` or `list()` to create a list.
 
 - Lists are **mutable**, but strings are **immutable**.
 
-- Lists are designated with `[ ]`, with elements separated by commas`;`, strings use`""`.
+- Lists are designated with `[ ]`, with elements separated by commas`;`, strings
+use`""`.
 
 **List Structure**
 
@@ -347,7 +406,8 @@ In Python, we can either use `[]` or `list()` to create a list.
 - **Remove**
 
     !!! note
-        The method will remove the first occurrence of the element in the list. Then the second. Etc.
+        The method will remove the first occurrence of the element in the list.
+        Then the second. Etc.
 
     e.g. `myList.remove(x) // x: element`
 
@@ -400,19 +460,26 @@ In Python, we can either use `[]` or `list()` to create a list.
 - `sum()`: Sum of the elements, numeric only
 
     !!! note
-        make sure the elements are numeric. You can't add numbers to strings or lists.
+        make sure the elements are numeric. You can't add numbers to strings or
+        lists.
 
 ### Dictionary
 
 !!! note
-    In this section, `myDict` will be the name of the dictionary that I will use in Python.
+    In this section, `myDict` will be the name of the dictionary that I will use
+    in Python.
 
 #### Keys and Values
-Keys and values are two very important concepts in Dictionary. In Python, Dictionaries are used to store data value in key:value pairs. Each key in the Dictionary may have zero or one or multiple values.
+Keys and values are two very important concepts in Dictionary. In Python,
+Dictionaries are used to store data value in key:value pairs. Each key in the
+Dictionary may have zero or one or multiple values.
 
 **How to assign multiple values to one key?**
 
-Let's say that in Python, we usually use `lists` or `tuples` to store a bunch of values. Similarly, we still can use these two data structures to store different values of a key element in the Dictionary. However, one thing you should notice is that `tuple` is immutable while `list` is mutable.
+Let's say that in Python, we usually use `lists` or `tuples` to store a bunch of
+values. Similarly, we still can use these two data structures to store different
+values of a key element in the Dictionary. However, one thing you should notice
+is that `tuple` is immutable while `list` is mutable.
 
 Below is the demo:
 
@@ -420,14 +487,19 @@ Below is the demo:
 
     ``` py
     # List method
-    myDict = {"userName":["Jack","Tom","James","Andy"]} # You can add anything to the "userName"
+    myDict = {"userName":["Jack","Tom","James","Andy"]} 
+    # You can add anything to the "userName"
 
     # Tuple method
-    myDict = {"userName":("Jack","Tom","James","Andy")} # You can't add something or delete something to "userName" since tuple is immutable
+    myDict = {"userName":("Jack","Tom","James","Andy")} 
+    # You can't add something or delete something to "userName"
+    # Since tuples are immutable
     ```
 **How to add values to one key in Dictionary?**
 
-Firstly, you need to make sure that you have used the `list` method. Secondly, all you need to do is just using the methods owned by `list` in Python. For example, if you want to add value, you need to use `myList.append()`.
+Firstly, you need to make sure that you have used the `list` method. Secondly,
+all you need to do is just using the methods owned by `list` in Python. For
+example, if you want to add value, you need to use `myList.append()`.
 
 === "Python"
 
@@ -436,11 +508,15 @@ Firstly, you need to make sure that you have used the `list` method. Secondly, a
     ``` 
 
 !!! note
-    If you want to use `.append()` to add values to your key, make sure to initialize your key's value with a `list`. Otherwise, the program will crash because only `list` in Python has the `append()` method.
+    If you want to use `.append()` to add values to your key, make sure to
+    initialize your key's value with a `list`. Otherwise, the program will crash
+    because only `list` in Python has the `append()` method.
 
 **Get the `keys` and `values` in the dictionary**
 
-Python is very powerful, if you want to get the `keys` and `values` of a dictionary, you only need to use `myDict.keys()` to get the `keys` and `myDict.values()` to get the `values`.
+Python is very powerful, if you want to get the `keys` and `values` of a
+dictionary, you only need to use `myDict.keys()` to get the `keys` and
+`myDict.values()` to get the `values`.
 
 === "Python"
 
@@ -450,11 +526,14 @@ Python is very powerful, if you want to get the `keys` and `values` of a diction
     ```
 
 !!! note
-    Please note that the `myDict.keys()` will return a value with `dict_keys`. Similarly, `myDict.values()` will return a value with `dict_values`. These two results can be treated as `lists`.
+    Please note that the `myDict.keys()` will return a value with `dict_keys`.
+    Similarly, `myDict.values()` will return a value with `dict_values`. These
+    two results can be treated as `lists`.
 
 a. How to judge whether a string has appeared in your dictionary's `values`?
 
-Don't worry. Python's `in` keyword can do this perfectly. i.e. You want to check whether "Tom" is your `values` in the dictionary. 
+Don't worry. Python's `in` keyword can do this perfectly. i.e. You want to check
+whether "Tom" is your `values` in the dictionary. 
 
 === "Python"
 
@@ -463,11 +542,15 @@ Don't worry. Python's `in` keyword can do this perfectly. i.e. You want to check
 	# Add stuff here
     ```
 !!! tip
-    `in` is an important keyword in Python. It mainly has two functions. One is to check if a value is present in a sequence (list, range, string etc). The other is to iterate through a sequence in a `for` loop.
+    `in` is an important keyword in Python. It mainly has two functions. One is
+    to check if a value is present in a sequence (list, range, string etc). The
+    other is to iterate through a sequence in a `for` loop.
 
 **Add new `{keys:values}` pair to Dictionary.**
 
-Python Dictionary has provided a very useful method called `myDict.update()` to let you add new `{keys:values}` pair to your dictionary quickly and conveniently.
+Python Dictionary has provided a very useful method called `myDict.update()` to
+let you add new `{keys:values}` pair to your dictionary quickly and
+conveniently.
 
 Below is the demo:
 
@@ -479,4 +562,6 @@ Below is the demo:
     ```
 
 !!! note
-    Every time you call the `update()` method, it won't erase your original `{keys:values}` in the dictionary. Instead, it will add a new one at the end of the dictionary.
+    Every time you call the `update()` method, it won't erase your original
+    `{keys:values}` in the dictionary. Instead, it will add a new one at the end
+    of the dictionary.

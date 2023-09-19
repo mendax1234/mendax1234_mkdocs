@@ -27,14 +27,20 @@ In short, the advantage of Gray code is that juts one bit changes for each step.
 
 
 ### Binary to Gray code Conversion
-1. The Most Significant Bit (MSB) of the gray code is always equal to the MSB of the given binary code.
-2. Other bits of the output gray code can be obtained by XORing binary code bit at that index and previous index.
+1. The Most Significant Bit (MSB) of the gray code is always equal to the MSB of
+the given binary code.
+2. Other bits of the output gray code can be obtained by XORing binary code bit 
+at that index and previous index.
 
-<p align="center"> <img src="/blog/binary-to-gray-code/Gray-Code1.png" title = "Binary code to gray code conversion"> </p>
+<p align="center"> <img src="/blog/binary-to-gray-code/Gray-Code1.png" title = 
+"Binary code to gray code conversion"> </p>
 
 ### Gray code to Binary Conversion
-1. The Most Significant Bit (MSB) of the binary code is always equal to the MSB of the given gray code.
-2. Other bits of the output binary code can be obtained by checking the gray code bit at that index. If the current gray code bit is 0, then copy the previous binary code bit, else copy the invert of the previous binary code bit.
+1. The Most Significant Bit (MSB) of the binary code is always equal to the MSB 
+of the given gray code.
+2. Other bits of the output binary code can be obtained by checking the gray 
+code bit at that index. If the current gray code bit is 0, then copy the 
+previous binary code bit, else copy the invert of the previous binary code bit.
 
 <p align="center"> <img src="/blog/binary-to-gray-code/Gray-Code2.png"> </p>
 
