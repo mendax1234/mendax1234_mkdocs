@@ -336,7 +336,12 @@ In Python, we can either use `[]` or `list()` to create a list.
     ``` py
     myList = ["hello", "world", "123"]
     myList = list("hello world 123")
+    # ['h', 'e', 'l', 'l', 'o', ' ', 'w', 'o', 'r', 'l', 'd', ' ', '1', '2', 
+    # '3']
     ```
+Remeber that in the previous [String part](#string), I have introduced the use
+of `.spilt()` method. In fact, `.spilt()` method can also be used to create a
+list. You can go back to review [that](#split)!
 
 **Similarities between String and List**
 
@@ -401,6 +406,7 @@ use`""`.
         myList = [1, 2, 3]
         myList.insert(1, 4) # [1, 4, 2, 3]
         myList.insert(-1, 4) # [1, 4, 2, 4, 3]
+        # insert before the index of the original element
         ```
 
 - **Remove**
