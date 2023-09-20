@@ -19,14 +19,14 @@ command of these interesting but "tricky" functions and methods in Python.
 
 !!! warning "Important"
     **methods** and **functions** are not the same thing. A **function** is a
-    *piece of code* that performs some operations. i.e. `len()`. Unlike a
+    *piece of code* that performs some operations. e.g. `len()`. Unlike a
     **function**, a **method** is applied in the context of a particular object.
-    This is indicated by the *dot notation* invocation. i.e. `myList.append()`. 
+    This is indicated by the *dot notation* invocation. e.g. `myList.append()`. 
 
 **Task list for this post:**
 
 - [ ] Add Introduction part
-- [ ] Add tuple part
+- [x] Add tuple part
 - [x] Add list part
     * [x]  Add slice part 
 - [x] The difference between Method and Function
@@ -45,8 +45,9 @@ command of these interesting but "tricky" functions and methods in Python.
     contain all the aspects of interesting Python functions. Also, this post can
     be used as a reference to SC1003 **Introduction to Computational Thinking** 
     in NTU SCSE. BTW, if you find something incorrect in this post, please let
-    me know by either [opening a commit]() or [making a pull request]() if you
-    can fix it. Thank you very much!
+    me know by either [opening a commit](https://github.com/mendax1234/mendax1234.github.io/issues)
+    or [making a pull request](https://github.com/mendax1234/mendax1234.github.io/pulls)
+    if you can fix it. Thank you very much!
 
 !!! warning "Important"
     Since I may not have enough time to do all the introduction work of some
@@ -86,8 +87,6 @@ Python has provided us with some very useful functions, they are
 `string.isUpper()`, `string.isLower()`, `string.isDigit()`. These functions can
 help us quickly check whether there is a Upper or lower letter or a digit in the
 string.
-
-Below is the Demo:
 
 === "Python"
 
@@ -157,7 +156,7 @@ joining all the elements in an iterable (list, tuple, string etc.) separated by
     ```
 
 !!! note
-    In Python, we can chain **methods** together. i.e. 
+    In Python, we can chain **methods** together. e.g. 
     `myString.upper().join("123")` will return `"1HELLO WORLD2HELLO WORLD3"`
     if `myString = "hello world"`.
 
@@ -235,7 +234,7 @@ In Python, we use `*` operator to repeat strings.
 
 #### Membership Operations
 In Python, we use `in` keyword to check if a string is present in another
-string. i.e. `if "hello" in myString:`
+string. e.g. `if "hello" in myString:`
 
 === "Python"
 
@@ -280,9 +279,9 @@ The index of a String
 
 #### Getting the code
 There are two common systems for representing characters: ASCII and Unicode. In
-Python, we use `ord()` function to get the code of a character. i.e. `ord("a")`
+Python, we use `ord()` function to get the code of a character. e.g. `ord("a")`
 will return `97`. And vice versa, we use `chr()` function to get the character
-of a code. i.e. `chr(97)` will return `"a"`.
+of a code. e.g. `chr(97)` will return `"a"`.
 
 <p align="center"> <img src="/blog/python-stuff/ASCII.jpg" title = "ASCII Table"> </p>
 
@@ -307,9 +306,9 @@ Then, we may need to know about **data structures**. **Data structure** are
 particular ways of storing data to make some operations easier or more
 efficient. Different data structures have different characteristics.
 
-And now, you may find the **Dictionary**, **List** and **Tuple** are all data
-structures in Python. They are also three **Composite Types**. So, let's talk
-about them one by one.
+And now, you may find that the **Dictionary**, **List** and **Tuple** are all
+data structures in Python. They are also three **Composite Types**. So, let's
+talk    about them one by one.
 
 !!! warning "Important"
     In this section, `myDict`, `myList` and `myTuple` will be the default name
@@ -343,6 +342,38 @@ Remeber that in the previous [String part](#string), I have introduced the use
 of `.spilt()` method. In fact, `.spilt()` method can also be used to create a
 list. You can go back to review [that](#split)!
 
+*Want to create a numerical list faster?*
+
+By using the `range()` function, you can quickly create a numerical list without
+doing repetitive work.
+
+=== "Python"
+
+    ``` py
+    myList = list(range(1, 10)) # [1, 2, 3, 4, 5, 6, 7, 8, 9]
+    ```
+Also, you need to know about **list comprehension**. It is a very useful way to
+create a list. 
+
+=== "Python"
+
+    ``` py
+    myList = [x for x in range(1, 10)] # [1, 2, 3, 4, 5, 6, 7, 8, 9]
+    myList = [x ** 2 for x in range(1,10)] # [1, 4, 9, 16, 25, 36, 49, 64, 81]
+    ```
+**List comprehension** can be divided into three parts.
+
+1. The variable name.  
+
+2. The *expression*. 
+
+    In the example above, the *expression* is `x` and `x ** 2` respectively. 
+
+3. The *for loop*
+
+    It is used to generate the numbers you want to feed into the
+    expression.
+
 **Similarities between String and List**
 
 - **Concatenate**: `+`(only for the same type.  String + String or List + List.
@@ -356,13 +387,14 @@ the second and third elements of `lst`.
 - **Membership**: the `in` operator
 
 **Differences between String and List**
+
 - Lists can contain any type of element, but strings are limited to characters.
 
-    - E.g. `l = [1, 'bill', 1.2345, True]`
+    * e.g. `l = [1, 'bill', 1.2345, True]`
 
 - Lists are **mutable**, but strings are **immutable**.
 
-- Lists are designated with `[ ]`, with elements separated by commas`;`, strings
+- Lists are designated with `[ ]`, with elements separated by commas`,` strings
 use`""`.
 
 **List Structure**
@@ -436,8 +468,6 @@ use`""`.
         Only lists have a **built-in sorting method**
         Thus, data should be converted to a list if it needs sorting.
 
-    e.g. 
-
     === "Python"
 
         ``` py
@@ -477,7 +507,7 @@ use`""`.
 
 #### Keys and Values
 Keys and values are two very important concepts in Dictionary. In Python,
-Dictionaries are used to store data value in key:value pairs. Each key in the
+Dictionaries are used to store data value in `key:value` pairs. Each key in the
 Dictionary may have zero or one or multiple values.
 
 **How to assign multiple values to one key?**
@@ -536,10 +566,10 @@ dictionary, you only need to use `myDict.keys()` to get the `keys` and
     Similarly, `myDict.values()` will return a value with `dict_values`. These
     two results can be treated as `lists`.
 
-a. How to judge whether a string has appeared in your dictionary's `values`?
+How to judge whether a string has appeared in your dictionary's `values`?
 
-Don't worry. Python's `in` keyword can do this perfectly. i.e. You want to check
-whether "Tom" is your `values` in the dictionary. 
+Don't worry. Python's `in` keyword can do this perfectly. 
+e.g. You want to check whether "Tom" is your `values` in the dictionary. 
 
 === "Python"
 
@@ -598,5 +628,5 @@ Thus tuples have some similar methods and functions with lists.
 
 Besides, you also need to know that tuples are designated with `(,)`. This is
 important because when you create a tuple with one element, you **must** add a 
-comma, also a pair of parentheses. i.e. `myTuple = (1,)`
+comma, also a pair of parentheses. e.g. `myTuple = (1,)`
 
