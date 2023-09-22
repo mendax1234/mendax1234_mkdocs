@@ -21,7 +21,7 @@
       
       
       <link rel="icon" href="../../../../../assets/favicon.png">
-      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.3.2">
+      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.4.1">
     
     
       
@@ -29,10 +29,10 @@
       
     
     
-      <link rel="stylesheet" href="../../../../../assets/stylesheets/main.30068a00.min.css">
+      <link rel="stylesheet" href="../../../../../assets/stylesheets/main.72749a73.min.css">
       
         
-        <link rel="stylesheet" href="../../../../../assets/stylesheets/palette.85d0ee34.min.css">
+        <link rel="stylesheet" href="../../../../../assets/stylesheets/palette.a5377069.min.css">
       
       
 
@@ -834,7 +834,7 @@ bit of the two operands are the same.</p>
 <li>
 <p><strong>How to understand the <a href="#conclusion">Conclusion</a>?</strong></p>
 <p>To rigorously prove that, the problem can be divided into two cases. </p>
-<ul>
+<ol>
 <li>
 <p>case one:</p>
 <p>The sign bit of the two operands are both 0 while the sign bit of the
@@ -856,7 +856,7 @@ the result is 0. Similar with case one, now you will find that during
 this time, you add two positive number but get a negative number as the
 result. This time, you must be confident that an overflow has happened.</p>
 </li>
-</ul>
+</ol>
 </li>
 </ol>
 <p>In conclusion, after analyzing these two cases, I have proved that the
@@ -870,26 +870,28 @@ overflow occurs.</p>
 <h4 id="reasons-behind_1">Reasons behind<a class="headerlink" href="#reasons-behind_1" title="Permanent link">&para;</a></h4>
 <p>To rigorously prove that, the problem can be divided into two cases since in a
 binary system, we only have 0 and 1.</p>
-<ul>
-<li>case one:</li>
-</ul>
+<ol>
+<li>
+<p>case one:</p>
 <p>The carry-on bit is 1 and the carry-out bit is 0. So, in order to let the
-  carry-out bit be 1, the sign bit of the two operands must be 0. (You can
-  easily understand this by trying yourself. i.e. If any of the sign bit is 1,
-  then 1 + 1 = 10, which will generate a carry-out bit of 1. Contraction!) Now,
-  let's see the MSB column, which contains three numbers, above the line are the
-  sign bits of two operands. Below the line is the sign bit of the result. Based
-  on the previous statement, from top to bottom, the three numbers should be 0, 
-  0, 1. Now, you will find that the sign bit of the result is different from the
-  sign bit of the two operands. Based on what we have already discussed in 
-  <a href="#method-1-compare-the-sign-bit-of-operands-and-result">Method 1</a>, you will
-  find that an overflow has happened.</p>
-<ul>
-<li>case two:</li>
-</ul>
+carry-out bit be 1, the sign bit of the two operands must be 0. (You can
+easily understand this by trying yourself. i.e. If any of the sign bit is 1,
+then 1 + 1 = 10, which will generate a carry-out bit of 1. Contraction!) Now,
+let's see the MSB column, which contains three numbers, above the line are the
+sign bits of two operands. Below the line is the sign bit of the result. Based
+on the previous statement, from top to bottom, the three numbers should be 0, 
+0, 1. Now, you will find that the sign bit of the result is different from the
+sign bit of the two operands. Based on what we have already discussed in 
+<a href="#method-1-compare-the-sign-bit-of-operands-and-result">Method 1</a>, you will
+find that an overflow has happened.</p>
+</li>
+<li>
+<p>case two:</p>
 <p>Now the carry-on bit is 0 and the carry-out bit is 1. Using the similar method
-  discussed in <strong>case one</strong>, you can easily find that the overflow has happened.
-  So, I won't repeat it here.</p>
+discussed in <strong>case one</strong>, you can easily find that the overflow has happened.
+So, I won't repeat it here.</p>
+</li>
+</ol>
 <p>Now, <a href="#method-2-compare-the-carry-on-bit-and-carry-out-bit-of-the-msb-column">Method 2</a>
 has also been proved to be correct! Congratulations! Now, hope that you already
 have a brand new undestanding of the overflow in two's complement system.</p>
@@ -900,7 +902,7 @@ have a brand new undestanding of the overflow in two's complement system.</p>
   <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">September 19, 2023</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">September 22, 2023</span>
       
         <br>
         Created:
@@ -1173,10 +1175,10 @@ have a brand new undestanding of the overflow in two's complement system.</p>
       <div class="md-dialog__inner md-typeset"></div>
     </div>
     
-    <script id="__config" type="application/json">{"base": "../../../../..", "features": ["navigation.tabs", "navigation.tabs.sticky", "navigation.sections", "navigation.path", "navigation.top", "navigation.footer", "search.suggest", "search.highlight", "content.tabs.link", "content.code.annotation", "content.code.copy", "toc.follow"], "search": "../../../../../assets/javascripts/workers/search.dfff1995.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "../../../../..", "features": ["navigation.tabs", "navigation.tabs.sticky", "navigation.sections", "navigation.path", "navigation.top", "navigation.footer", "search.suggest", "search.highlight", "content.tabs.link", "content.code.annotation", "content.code.copy", "toc.follow"], "search": "../../../../../assets/javascripts/workers/search.a264c092.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="../../../../../assets/javascripts/bundle.dff1b7c8.min.js"></script>
+      <script src="../../../../../assets/javascripts/bundle.4e0fa4ba.min.js"></script>
       
     
   </body>
