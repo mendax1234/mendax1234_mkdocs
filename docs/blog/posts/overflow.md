@@ -72,7 +72,7 @@ the same?__
 
 	To rigorously prove that, the problem can be divided into two cases. 
 	
-	- case one:
+	1. case one:
 
 		The sign bit of the two operands are both 0 while the sign bit of the
 		result if 1. Before you move on, you need to know that in the two's
@@ -86,7 +86,7 @@ the same?__
 		the result is out of the range which can be represented by two's
 		complement. Thus, overflow occurs.
 
-	- case two:
+	2. case two:
 		  
 		Now the sign bit of your two operands are both 1, while the sign bit of
 		the result is 0. Similar with case one, now you will find that during
@@ -110,25 +110,25 @@ overflow occurs.
 To rigorously prove that, the problem can be divided into two cases since in a
 binary system, we only have 0 and 1.
 
-- case one:
+1. case one:
 
-  The carry-on bit is 1 and the carry-out bit is 0. So, in order to let the
-  carry-out bit be 1, the sign bit of the two operands must be 0. (You can
-  easily understand this by trying yourself. i.e. If any of the sign bit is 1,
-  then 1 + 1 = 10, which will generate a carry-out bit of 1. Contraction!) Now,
-  let's see the MSB column, which contains three numbers, above the line are the
-  sign bits of two operands. Below the line is the sign bit of the result. Based
-  on the previous statement, from top to bottom, the three numbers should be 0, 
-  0, 1. Now, you will find that the sign bit of the result is different from the
-  sign bit of the two operands. Based on what we have already discussed in 
-  [Method 1](#method-1-compare-the-sign-bit-of-operands-and-result), you will
-  find that an overflow has happened.
+    The carry-on bit is 1 and the carry-out bit is 0. So, in order to let the
+    carry-out bit be 1, the sign bit of the two operands must be 0. (You can
+    easily understand this by trying yourself. i.e. If any of the sign bit is 1,
+    then 1 + 1 = 10, which will generate a carry-out bit of 1. Contraction!) Now,
+    let's see the MSB column, which contains three numbers, above the line are the
+    sign bits of two operands. Below the line is the sign bit of the result. Based
+    on the previous statement, from top to bottom, the three numbers should be 0, 
+    0, 1. Now, you will find that the sign bit of the result is different from the
+    sign bit of the two operands. Based on what we have already discussed in 
+    [Method 1](#method-1-compare-the-sign-bit-of-operands-and-result), you will
+    find that an overflow has happened.
 
-- case two:
+2. case two:
 
-  Now the carry-on bit is 0 and the carry-out bit is 1. Using the similar method
-  discussed in **case one**, you can easily find that the overflow has happened.
-  So, I won't repeat it here.
+    Now the carry-on bit is 0 and the carry-out bit is 1. Using the similar method
+    discussed in **case one**, you can easily find that the overflow has happened.
+    So, I won't repeat it here.
 
 Now, [Method 2](#method-2-compare-the-carry-on-bit-and-carry-out-bit-of-the-msb-column)
 has also been proved to be correct! Congratulations! Now, hope that you already
