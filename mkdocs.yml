@@ -19,8 +19,9 @@ theme:
     - navigation.tabs
     - navigation.tabs.sticky
     - navigation.sections
-    #- navigation.instant
+    - navigation.instant
     - navigation.path
+    - navigation.tracking
     - navigation.top
     - navigation.footer
     - search.suggest
@@ -37,6 +38,7 @@ theme:
     # Palette toggle for light mode
     - media: "(prefers-color-scheme: light)"
       scheme: default 
+      primary: white
       toggle:
         icon: material/brightness-7
         name: Switch to dark mode
@@ -44,6 +46,7 @@ theme:
     # Palette toggle for dark mode
     - media: "(prefers-color-scheme: dark)"
       scheme: slate
+      primary: black
       toggle:
         icon: material/brightness-4
         name: Switch to light mode
@@ -108,6 +111,9 @@ nav:
     - blog/index.md 
   - CV:
     - files/cv.pdf
+
+# extra_css:
+#   - stylesheets/extra.css
 
 markdown_extensions:
   - footnotes
