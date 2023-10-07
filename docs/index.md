@@ -1,9 +1,9 @@
----
-# template: home.html
-# hide:
-#   - navigation
-#   - toc
----
+<!-- ---
+template: home.html
+hide:
+  - navigation
+  - toc
+--- -->
 
 ## Hi there 👋
 
