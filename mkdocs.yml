@@ -103,7 +103,7 @@ plugins:
 #          name: Chinese
           
 nav:
-  - Home: index.md
+  - About: index.md
   - Blog:
     - blog/index.md 
   - CV:
