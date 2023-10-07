@@ -1,7 +1,7 @@
 ---
 # template: home.html
-hide:
-  - navigation
+# hide:
+#   - navigation
 #   - toc
 ---
 
