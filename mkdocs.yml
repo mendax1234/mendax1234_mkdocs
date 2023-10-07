@@ -90,6 +90,9 @@ plugins:
   - search
   - git-revision-date-localized:
       enable_creation_date: true
+  - redirects:
+      redirect_maps:
+        'cv/index.md': 'https://mendax1234.github.io/files/cv.pdf'
 #  - i18n:
 #      search_reconfigure: false
 #      default_language: en
@@ -103,6 +106,8 @@ nav:
   - Home: index.md
   - Blog:
     - blog/index.md 
+  - CV:
+    - cv/index.md
 
 markdown_extensions:
   - footnotes
