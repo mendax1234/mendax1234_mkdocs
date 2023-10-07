@@ -1,4 +1,12 @@
-**Hi there 👋， I am [Daniel Wenbo(mendax1234)](https://mendax1234.github.io/)**
+---
+hide:
+  - navigation
+#   - toc
+---
+
+## Hi there 👋
+
+**I am [Daniel Wenbo(mendax1234)](https://mendax1234.github.io/)**
 
 <!-- ![visitors](https://visitor-badge.glitch.me/badge?page_id=mendax1234.mendax1234) -->
 ![Visitors](https://api.visitorbadge.io/api/visitors?path=https%3A%2F%2Fgithub.com%2Fmendax1234&countColor=%23263759)
@@ -15,18 +23,18 @@ core contributor.
 - [ThinkPadX390-Opencore-EFI](https://github.com/mendax1234/ThinkpadX390-Opencore-EFI)
 founder and core contributor.
 
-**Where to find me**
+### Where to find me
 
 - [My Blog](https://mendax1234.github.io/blog/)
 - E-mail: daniel.wb.zhu@gmail.com
 
-**Tech preferences**
+### Tech preferences
 
 |  |                      |                                                    |
 |::|:--------------------:|:--------------------------------------------------:|
 |🖥| **Operating System** | Windows 11 Pro & macOS(Hackintosh)                 |
 
-**You are probably also looking for...**
+### You are probably also looking for...
 
 - To view FRC Team 6940's robot code, go to FRC Team 6940's
 [Official Github Page](https://github.com/Team6940)
