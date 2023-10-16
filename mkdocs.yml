@@ -107,6 +107,8 @@ plugins:
           
 nav:
   - About: index.md
+  - Resources:
+    - resources/index.md
   - Blog:
     - blog/index.md 
   - CV:
