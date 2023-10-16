@@ -107,10 +107,10 @@ plugins:
           
 nav:
   - About: index.md
-  - Resources:
-    - resources/index.md
   - Blog:
     - blog/index.md 
+  - Resources:
+    - resources/index.md
   - CV:
     - files/cv.pdf
 
