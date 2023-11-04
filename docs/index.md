@@ -26,7 +26,7 @@ founder and core contributor.
 
 ### Where to find me
 
-- [My Blog](https://mendax1234.github.io/blog/)
+- [My Bio](https://linktr.ee/mendax1234)
 - E-mail: daniel.wb.zhu@gmail.com
 
 ### Tech preferences
