@@ -97,12 +97,13 @@ extra:
 plugins:
   - blog
   - search
-  - privacy
+  # - privacy
   - git-committers:
       repository: mendax1234/mendax1234.github.io
       branch: main
-  - git-authors
+  # - git-authors # No use ah
   - git-revision-date-localized:
+      type: timeago
       enable_creation_date: true
   # - redirects:
   #     redirect_maps:
