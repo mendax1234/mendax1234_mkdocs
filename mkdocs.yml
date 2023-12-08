@@ -97,6 +97,11 @@ extra:
 plugins:
   - blog
   - search
+  - privacy
+  - git-committers:
+      repository: mendax1234/mendax1234.github.io
+      branch: main
+  - git-authors
   - git-revision-date-localized:
       enable_creation_date: true
   # - redirects:
